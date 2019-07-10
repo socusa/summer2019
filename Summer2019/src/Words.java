@@ -1,6 +1,6 @@
 
 public class Words {
-    public String[] words() {
+    public static String[] words() {
         return(new String[]{"abandon",
                             "abitat",
                             "abolish",
