@@ -5,12 +5,13 @@ import static music.CreatingMusic.*;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Sequence;
 import javax.sound.midi.Sequencer;
+import javax.sound.midi.Track;
 
 public class Util {
 	
 	public static void jingleBells(CreatingMusic creatingMusic) {
 		try {
-			Sequencer player = MidiSystem.getSequencer();
+            Sequencer player = MidiSystem.getSequencer();
 			
 			player.open();
 			
@@ -276,7 +277,67 @@ public class Util {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
+		}
 			
+		}
+		
+	public static void theEntertainer(CreatingMusic creatingMusic) {
+		try {
+	        Sequencer player = MidiSystem.getSequencer();
+				
+			player.open();
+				
+			player.setTempoInBPM(60);
+				
+			Sequence sequence = new Sequence(Sequence.PPQ,4);
+				
+			track = sequence.createTrack();
+				
+// Measure 1
+			
+			addNotes("D6s+D7s E6s+E7s C6s+C7s",T);
+			tie("A5s","A5s",D,T);
+			tie("A6s","A6s",A,T);
+			addNotes("B5s+B6s G5i+G6i",T);
+			
+			for (int counter=0;counter<6;counter++)
+				addRest("s",B);
+			
+			addRest("i",B);
+			
+// Measure 2
+			
+			addNotes("D6s E6s C6s",T);
+			tie("A5s","A5s",A,T);
+			addNotes("B5s G5i",T);
+			
+			addNotes("D5s E5s C5s",B);
+			tie("A4s","A4s",A,B);
+			addNotes("B4s G4i",B);
+			
+// Measure 3
+			
+			addNotes("D5s E5s C5s",T);
+			tie("G4s","G4s",A,T);
+			addNotes("B4s A4s Ab4s",T);
+			
+			addNotes("D4s E4s C4s",B);
+			tie("A3s","A3s",A,B);
+			addNotes("B4s A3s Ab4s",B);
+			
+			
+			
+			
+			
+			
+		//	addNotes("D5s E5s C5s A4i B4s A4s ")
+			
+				
+			player.setSequence(sequence);
+				
+			player.start();	
+		} catch (Exception e) {
+			e.printStackTrace();	
 		}
 	}
 		

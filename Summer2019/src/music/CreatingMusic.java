@@ -12,6 +12,7 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.Sequencer;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.Track;
+import javax.swing.JOptionPane;
 
 public class CreatingMusic {
 	public static int trebleTime;
@@ -28,15 +29,20 @@ public class CreatingMusic {
 		
 		map.put("C", 60);
 		map.put("C#", 61);
+		map.put("Db",61);
 		map.put("D", 62);
 		map.put("D#", 63);
+		map.put("Eb",63);
 		map.put("E", 64);
 		map.put("F", 65);
 		map.put("F#", 66);
+		map.put("Gb",66);
 		map.put("G", 67);
 		map.put("G#", 68);
+		map.put("Ab",68);
 		map.put("A", 69);
 		map.put("A#", 70);
+		map.put("Bb",70);
 		map.put("B", 71);
 		
 		return(map.get(noteName) + (octave - 5)*12);
@@ -75,10 +81,10 @@ public class CreatingMusic {
        
        try {
 		message.setMessage(144,1,getNote(noteName,octave),120);
-	} catch (InvalidMidiDataException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+       } catch (InvalidMidiDataException e) {
+    	   // TODO Auto-generated catch block
+    	   e.printStackTrace();
+       }
        
        track.add(new MidiEvent(message,temp));
        
@@ -88,10 +94,10 @@ public class CreatingMusic {
        
        try {
 		message.setMessage(128,1,getNote(noteName,octave),120);
-	} catch (InvalidMidiDataException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+       } catch (InvalidMidiDataException e) {
+    	   // TODO Auto-generated catch block
+    	   e.printStackTrace();
+       }
        
        track.add(new MidiEvent(message,temp));
        
@@ -99,7 +105,61 @@ public class CreatingMusic {
     	   trebleTime = (treble) ? temp : trebleTime;
     	   bassTime = (!treble) ? temp : bassTime;
        }
-       
+	}
+	
+	public static void addNote(String noteName,
+			                   int duration,
+			                   int octave,
+			                   boolean advance,
+			                   boolean treble) {
+		int temp = (treble) ? trebleTime : bassTime;
+	       
+	    ShortMessage message = new ShortMessage();
+	       
+	    try {
+			message.setMessage(144,1,getNote(noteName,octave),120);
+		} catch (InvalidMidiDataException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       
+	    track.add(new MidiEvent(message,temp));
+	    
+	    temp += duration;
+	       
+	    message = new ShortMessage();
+	       
+	    try {
+			message.setMessage(128,1,getNote(noteName,octave),120);
+		} catch (InvalidMidiDataException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       
+	    track.add(new MidiEvent(message,temp));
+	    
+	    if (advance) {
+	        trebleTime = (treble) ? temp : trebleTime;
+	    	bassTime = (!treble) ? temp : bassTime;
+	    } 
+	}
+	
+	public static void addNotes(String notes,
+			                    boolean treble) {
+		String[] tokens = notes.split(" ");
+		
+		for (int counter=0;counter<tokens.length;counter++) {
+			if (!tokens[counter].contains("+"))
+				addNote(tokens[counter],true,treble);
+			else {
+				String[] tokens1 = tokens[counter].split("\\+");
+				
+				for (int counter1=0;counter1<tokens1.length-1;counter1++)
+					addNote(tokens1[counter1],false,treble);
+				
+				addNote(tokens1[tokens1.length-1],true,treble);
+			}			
+		}
 	}
 	
 	public static void addRest(String duration,
@@ -108,6 +168,41 @@ public class CreatingMusic {
     	   trebleTime += lengthOfDuration(duration);
        else
     	   bassTime = lengthOfDuration(duration);
+	}
+	
+	public static void tie(String note1,
+			               String note2,
+			               boolean advance,
+			               boolean treble) {
+		String[] tokens1 = note1.split("\\d");
+
+	    String noteName1 = tokens1[0];
+	    String duration1 = tokens1[1];
+	    int octave1 = Integer.parseInt(note1.substring(noteName1.length(),noteName1.length()+1));
+	       
+	    String[] tokens2 = note2.split("\\d");
+
+	    String noteName2 = tokens2[0];
+	    String duration2 = tokens2[1];
+	    int octave2 = Integer.parseInt(note2.substring(noteName2.length(),noteName2.length()+1));
+	    
+	    String error = "";
+	    
+	    if (!noteName1.equalsIgnoreCase(noteName2))
+	    	error += "The note names are not the same\n";
+	    
+	    if (octave1 != octave2)
+	    	error += "The octaves are not the same";
+	    
+	    if (!error.equals(""))
+	    	JOptionPane.showMessageDialog(null, error);
+	    else {
+	    	addNote(noteName1,
+	    			lengthOfDuration(duration1) + lengthOfDuration(duration2),
+	    			octave1,
+	    			advance,
+	    			treble);	    	
+	    }
 	}
 
 	public static void play() {
@@ -154,7 +249,7 @@ public class CreatingMusic {
 		
 		CreatingMusic creatingMusic = new CreatingMusic();
 		
-		Util.jingleBells(creatingMusic);
+		Util.theEntertainer(creatingMusic);
 
 	}
 }
