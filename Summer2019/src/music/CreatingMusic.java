@@ -167,39 +167,53 @@ public class CreatingMusic {
        if (treble)
     	   trebleTime += lengthOfDuration(duration);
        else
-    	   bassTime = lengthOfDuration(duration);
+    	   bassTime += lengthOfDuration(duration);
 	}
 	
-	public static void tie(String note1,
-			               String note2,
-			               boolean advance,
-			               boolean treble) {
-		String[] tokens1 = note1.split("\\d");
+	public static void tie(boolean advance,
+			               boolean treble,
+			               String... notes) {
+		String[] noteNames = new String[notes.length];
+		String[] durations = new String[notes.length];
+		int[] octaves = new int[notes.length];
+		
+		int duration = 0;
+		
+		for (int counter=0;counter<notes.length;counter++) {
+		   String[] tokens = notes[counter].split("\\d");
 
-	    String noteName1 = tokens1[0];
-	    String duration1 = tokens1[1];
-	    int octave1 = Integer.parseInt(note1.substring(noteName1.length(),noteName1.length()+1));
+	       noteNames[counter] = tokens[0];
+	       durations[counter] = tokens[1];
 	       
-	    String[] tokens2 = note2.split("\\d");
-
-	    String noteName2 = tokens2[0];
-	    String duration2 = tokens2[1];
-	    int octave2 = Integer.parseInt(note2.substring(noteName2.length(),noteName2.length()+1));
-	    
+	       duration += lengthOfDuration(durations[counter]);
+	       
+	       octaves[counter] = Integer.parseInt(notes[counter].substring(noteNames[counter].length(),noteNames[counter].length()+1));
+		}
+		
 	    String error = "";
 	    
-	    if (!noteName1.equalsIgnoreCase(noteName2))
+	    boolean noteNamesNotTheSame = false;
+	    
+	    for (int counter=1;counter<notes.length;counter++)
+	    	noteNamesNotTheSame &= (noteNames[0].equals(noteNames[counter]));
+	    
+        boolean octavesNotTheSame = false;
+	    
+	    for (int counter=1;counter<notes.length;counter++)
+	    	octavesNotTheSame &= (octaves[0] == octaves[counter]);
+	    
+	    if (noteNamesNotTheSame)
 	    	error += "The note names are not the same\n";
 	    
-	    if (octave1 != octave2)
+	    if (octavesNotTheSame)
 	    	error += "The octaves are not the same";
 	    
 	    if (!error.equals(""))
 	    	JOptionPane.showMessageDialog(null, error);
 	    else {
-	    	addNote(noteName1,
-	    			lengthOfDuration(duration1) + lengthOfDuration(duration2),
-	    			octave1,
+	    	addNote(noteNames[0],
+	    			duration,
+	    			octaves[0],
 	    			advance,
 	    			treble);	    	
 	    }
