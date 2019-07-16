@@ -881,6 +881,65 @@ public class Util {
 			addNotes("E5s C6i E5s C6i E5s",T);
 			addNotes("C4i E4i+B4i+C5i G3i+G4i G4i+Bb4i+C5i",B);
 			
+// Measure 78
+			
+			tie(A,T,"C6s","C6q","C6s");
+			addNotes("C6s+E6s+C7s D6s+F6s+D7s D#6s+F#6s+D#7s",T);
+			addNotes("F3i+F4i A4i+C5i E3i+E4i G4i+C5i",B);
+			
+// Measure 79
+			
+			addNotes("E6s+G6s+E7s C6s+E6s+C7s D6s+F6s+D7s",T);
+			tie(D,T,"C6s","C6s");
+			tie(D,T,"E6s","E6s");
+			tie(A,T,"E7s","E7s");
+			addNotes("B5s+D6s+B6s D6i+F6i+D7i",T);
+			addNotes("G3i E4i+G4i+C5i G3i F4i+G4i+B4i",B);
+
+// Measure 80
+			
+			tie(D,T,"C6q","C6i");
+			tie(D,T,"E6q","E6i");
+			tie(A,T,"C7q","C7i");
+			addNotes("C6s+C7s D6s+D7s",T);
+			addNotes("B4i E4i+G4i+C5i G4i+C5i+E5i",B);
+			addRest("i",B);
+
+// Measure 81
+			
+			addNotes("E6s+E7s C6s+C7s D6s+D7s",T);
+			tie(D,T,"E6s","E6s");
+			tie(A,T,"E7s","E7s");
+			addNotes("C6s+C7s D6s+D7s C6s+C7s",T);
+			addNotes("C4i+C5i G4i+C5i+E5i Bb3i+Bb4i G4i+C5i+E5i",B);
+
+// Measure 82
+			
+			addNotes("E6s+E7s C6s+C7s D6s+D7s",T);
+			tie(D,T,"E6s","E6s");
+			tie(A,T,"E7s","E7s");
+			addNotes("C6s+C7s D6s+D7s C6s+C7s",T);
+			addNotes("A3i+A4i A4i+C5i+F5i Ab3i+Ab4i Ab4i+C5i+F5i",B);
+
+// Measure 83
+			
+			addNotes("E6s+G6s+E7s C6s+E6s+C7s D6s+F6s+D7s",T);
+			tie(D,T,"C6s","C6s");
+			tie(D,T,"E6s","E6s");
+			tie(A,T,"C7s","C7s");
+			addNotes("B5s+D6s+B6s D6i+F6i+D7i",T);
+			addNotes("G3i+G4i G4i+C5i+E5i G3i G4i+B4i",B);
+			
+// Measure 84
+			
+			addNotes("C6q+E6q+C7q C6i+E6i+C7i",T);
+			addRest("i",T);
+			addNotes("C4i+G4i+C5i G3i+G4i C3i+C4i",B);
+			addRest("i",B);
+
+			
+			
+			
 
 			
 			

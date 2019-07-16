@@ -376,7 +376,6 @@ public class CreatingMusic extends JFrame implements ActionListener {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-
 	}
 
 
@@ -402,15 +401,13 @@ public class CreatingMusic extends JFrame implements ActionListener {
 		Method[] methods = Util.class.getDeclaredMethods();
 		
 		for (int counter=0;counter<methods.length;counter++) {
-			if (methods[counter].getName().equalsIgnoreCase("item"))
+			if (methods[counter].getName().equalsIgnoreCase(item))
 				try {
-					methods[counter].invoke(this);
+					methods[counter].invoke(null,this);
 				} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-				
 		}
-		
 	}
 }
