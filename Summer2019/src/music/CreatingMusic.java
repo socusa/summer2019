@@ -2,6 +2,12 @@ package music;
 
 import static music.CreatingMusic.track;
 
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,9 +18,12 @@ import javax.sound.midi.Sequence;
 import javax.sound.midi.Sequencer;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.Track;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-public class CreatingMusic {
+public class CreatingMusic extends JFrame implements ActionListener {
 	public static int trebleTime;
 	public static int bassTime;
 	public static final boolean T = true;
@@ -22,6 +31,30 @@ public class CreatingMusic {
 	public static final boolean A = true; // Advance
 	public static final boolean D = false; // Don't advance
 	public static Track track;
+	public static String key = "C";
+	public static JComboBox<String> songs;
+	public static JButton play;
+	
+	public CreatingMusic(String title) {
+		super(title);
+		
+		setLayout(new FlowLayout());
+		
+		add(songs = new JComboBox<String>());
+		
+		songs.setFont(new Font("Comic Sans MS",Font.BOLD,20));
+		
+	    Method[] methods = Util.class.getDeclaredMethods();
+	
+	    for (Method method : methods)
+	    	songs.addItem(method.getName());	    
+	    
+	    add(play = new JButton("Play"));
+	    
+	    play.setFont(new Font("Comic Sans MS",Font.BOLD,20));
+	    
+	    play.addActionListener(this);
+	}
 	
 	public static int getNote(String noteName,
 			                  int octave) {
@@ -45,7 +78,98 @@ public class CreatingMusic {
 		map.put("Bb",70);
 		map.put("B", 71);
 		
+		switch (key.toUpperCase()) {
+		case "G" : { map.put("F",66); 
+		             break; }
+		case "D" : { map.put("F",66);
+		             map.put("C",61); 
+		             break; }
+		case "A" : { map.put("F",66);
+		             map.put("C",61);
+		             map.put("G",68);
+		             break; }
+		case "E" : { map.put("F",66);
+                     map.put("C",61);
+                     map.put("G",68);
+                     map.put("D",63);
+                     break; }
+		case "B" : { map.put("F",66);
+                     map.put("C",61);
+                     map.put("G",68);
+                     map.put("D",63);
+                     map.put("A",70);
+                     break; }
+		case "F#" : { map.put("F",66);
+                      map.put("C",61);
+                      map.put("G",68);
+                      map.put("D",63);
+                      map.put("A",70);
+                      map.put("E",65);
+                      break; }
+		case "C#" : { map.put("F",66);
+                      map.put("C",61);
+                      map.put("G",68);
+                      map.put("D",63);
+                      map.put("A",70);
+                      map.put("E",65);
+                      map.put("B",72);
+                      break; }
+		case "F" : {
+			          map.put("B",70);
+		              break;
+       		       }
+		case "Bb" : {
+	                  map.put("B",70);
+	                  map.put("E",63);
+                      break;
+		            }
+		case "Eb" : {
+                      map.put("B",70);
+                      map.put("E",63);
+                      map.put("A",68);
+                      break;
+                    }
+		case "Ab" : {
+                      map.put("B",70);
+                      map.put("E",63);
+                      map.put("A",68);
+                      map.put("D",61);
+                      break;
+                    }
+		case "Db" : {
+                      map.put("B",70);
+                      map.put("E",63);
+                      map.put("A",68);
+                      map.put("D",61);
+                      map.put("G",66);
+                      break;
+                    }
+		case "Gb" : {
+                      map.put("B",70);
+                      map.put("E",63);
+                      map.put("A",68);
+                      map.put("D",61);
+                      map.put("G",66);
+                      map.put("C",59);
+                      break;
+                    }
+		case "Cb" : {
+                      map.put("B",70);
+                      map.put("E",63);
+                      map.put("A",68);
+                      map.put("D",61);
+                      map.put("G",66);
+                      map.put("C",59);
+                      map.put("F",64);
+                      break;
+                    }
+		}
+		
 		return(map.get(noteName) + (octave - 5)*12);
+	}
+	
+	public void setKey(String key) {
+		CreatingMusic.key = key;
 	}
 	
 	public static int lengthOfDuration(String duration) {
@@ -261,9 +385,32 @@ public class CreatingMusic {
 		
 //		play();
 		
-		CreatingMusic creatingMusic = new CreatingMusic();
+		CreatingMusic creatingMusic = new CreatingMusic("Creating Music");
 		
-		Util.theEntertainer(creatingMusic);
+		creatingMusic.setSize(500,500);
+		creatingMusic.setLocationRelativeTo(null);
+		creatingMusic.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        creatingMusic.setVisible(true);
+	}
 
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+		String item = songs.getSelectedItem().toString();
+		
+		Method[] methods = Util.class.getDeclaredMethods();
+		
+		for (int counter=0;counter<methods.length;counter++) {
+			if (methods[counter].getName().equalsIgnoreCase("item"))
+				try {
+					methods[counter].invoke(this);
+				} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				
+		}
+		
 	}
 }

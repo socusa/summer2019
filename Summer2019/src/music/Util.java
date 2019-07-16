@@ -9,7 +9,7 @@ import javax.sound.midi.Track;
 
 public class Util {
 	
-	public static void jingleBells(CreatingMusic creatingMusic) {
+	public static void playJingleBells(CreatingMusic creatingMusic) {
 		try {
             Sequencer player = MidiSystem.getSequencer();
 			
@@ -281,7 +281,7 @@ public class Util {
 			
 		}
 		
-	public static void theEntertainer(CreatingMusic creatingMusic) {
+	public static void playTheEntertainer(CreatingMusic creatingMusic) {
 		try {
 	        Sequencer player = MidiSystem.getSequencer();
 				
@@ -457,6 +457,7 @@ public class Util {
 			addNotes("D5s D#5s",T);
 			addNotes("C4i+G4i+C5i G3i+G4i A3i+A4i B3i+B4i",B);
 			
+			
 // Measure 21
 			
 			addNotes("E5s C6i E5s C6i E5s",T);
@@ -572,6 +573,10 @@ public class Util {
 		    addNotes("B5s+D6s+B6s D6i+F6i+D7i",T);
 			addNotes("G3i+G4i G4i+C5i+E5i G3i G4i+B4i",B);
 				
+			
+
+// Beginning of part 2
+			
 // Measure 36
 			
 			tie(D,T,"C6q","C6s");
@@ -695,7 +700,7 @@ public class Util {
 			
 			tie(D,T,"E5s","E5q","E5s");
 			tie(A,T,"C6s","C6q","C6s");
-			addNotes("E5s+C6s+E6s F5s+D6s+F6s F#5s+D#6s+A#6s",T);
+			addNotes("E5s+C6s+E6s F5s+D6s+F6s F#5s+D#6s+F#6s",T);
 			addNotes("C4i+C5i G3i+G4i E3i+E4i D3i+D4i",B);
 
 // Measure 53
@@ -826,6 +831,60 @@ public class Util {
 			tie(A,T,"C6s","C6q","C6s");
 			addNotes("C6s+E6s+C7s D6s+F6s+D7s D#6s+F#6s+D#7s",T);
 			addNotes("F3i+F4i A4i+C5i E3i+E4i G4i+C5i",B);
+			
+// Measure 71
+			
+			addNotes("E6s+G6s+E7s C6s+E6s+C7s D6s+F6s+D7s",T);
+			tie(D,T,"E6s","E6s");
+			tie(D,T,"G6s","G6s");
+			tie(A,T,"E7s","E7s");
+			addNotes("B5s+D6s+B6s D6i+F6i+D7i",T);
+			addNotes("G3i E4i+G4i+C5i G3i F4i+G4i+B4i",B);
+			
+// Measure 72
+			
+			tie(D,T,"C6q","C6i");
+			tie(D,T,"E6q","E6i");
+			tie(A,T,"C7q","C7i");
+			addNotes("D5s D#5s",T);
+			addNotes("C4i E4i+G4i+C5i E4i+G4i+C5i G4i+B4i",B);
+			
+// Measure 73
+			
+			addNotes("E5s C6i E5s C6i E5s",T);
+			addNotes("C4i E4i+G4i+C5i G3i+G4i G4i+Bb4i+C5i",B);
+			
+// Measure 74
+			
+			tie(A,T,"C6s","C6q","C6i");
+			addNotes("A5s+C6s+A6s G5s+C6s+G6s",T);
+			addNotes("F3i+F4i A4i+C5i E3i+E4i Eb3i+Eb4i",B);
+			
+// Measure 75
+			
+			addNotes("F#5s+C6s+F#6s A5s+A6s C6s+C7s",T);
+			tie(D,T,"E6s","E6s");
+			tie(A,T,"E7s","E7s");
+			addNotes("D6s+D7s C6s+C7s A5s+A6s",T);
+			addNotes("D3i+D4i D4i+F#4i+A4i+C5i D4i F#4i+A4i+C5i",B);
+			
+// Measure 76
+			
+			tie(D,T,"D6q","D6i");
+			tie(D,T,"F6q","F6i");
+			tie(A,T,"D7q","D7i");
+			addNotes("D5s D#5s",T);
+			addNotes("G4i+B4i G3i+B4i A3i+A4i B3i+B4i",B);
+			
+// Measure 77
+			
+			addNotes("E5s C6i E5s C6i E5s",T);
+			addNotes("C4i E4i+B4i+C5i G3i+G4i G4i+Bb4i+C5i",B);
+			
+
+			
+			
+			
             
             
 						
@@ -847,6 +906,60 @@ public class Util {
 				
 			player.setSequence(sequence);
 				
+			player.start();	
+		} catch (Exception e) {
+			e.printStackTrace();	
+		}
+	}
+	
+	public static void playItsyBitsySpider(CreatingMusic creatingMusic) {
+		try {
+	        Sequencer player = MidiSystem.getSequencer();
+				
+			player.open();
+				
+			player.setTempoInBPM(90);
+				
+			Sequence sequence = new Sequence(Sequence.PPQ,4);
+				
+			track = sequence.createTrack();
+			
+			key = "G";
+			
+			addRest("i",T);
+			addNotes("D5i",T);
+			addRest("q",B);
+			
+			addNotes("G5i. G5s G5i. A5s B5q B5i. B5s",T);
+			addNotes("G4h+B4h G4h+B4h",B);
+			
+			addNotes("A5i. G5s A5i. B5s G5q",T);
+			addRest("q",T);
+			addNotes("D4h+F4h G4h+B4h",B);
+			
+			addNotes("B5q B5i. C6s D6q D6q",T);
+			addNotes("G4h+B4h G4h+B4h",B);
+			
+			addNotes("C6i. B5s C6i. D6s B5q",T);
+			addRest("q",T);
+			
+			addNotes("G5q G5i. A5s B5q B5q",T);
+			addNotes("G4i+B4i G4i+B4i",B);
+			
+			addNotes("A5i. G5s A5i. B5s G5q D5i. D5s",T);
+			addNotes("D4h+F4h G4h+B4h",B);
+			
+			addNotes("G5i. G5s G5i. A5s B5q B5i. B5s",T);
+			addNotes("G4h+B4h G4h+B4h",B);
+			
+			addNotes("A5i. G5s A5i. B5s G5q",T);
+			addRest("q",T);
+			addNotes("D4h+F4h G4h+B4h",B);
+			
+			
+			
+			player.setSequence(sequence);
+			
 			player.start();	
 		} catch (Exception e) {
 			e.printStackTrace();	
