@@ -402,6 +402,15 @@ public class CreatingMusic extends JFrame implements ActionListener {
        else
     	   bassTime += lengthOfDuration(duration);
 	}
+
+	public static void addRest(String duration,
+                               boolean treble,
+                               boolean third) {
+       if (third)
+    	   thirdVoiceTime += lengthOfDuration(duration);
+       else
+    	   fourthVoiceTime += lengthOfDuration(duration);
+	}
 	
 	public static void tie(boolean advance,
 			               boolean treble,
