@@ -1074,12 +1074,145 @@ public class Util {
 			addRest("i",B);
 			addRest("q",B);
 
+// Measure 101
+			
+			addNotes("F6s+A6s G#6s",T);
+			tie(D,T,"F6i","F6i");
+			tie(A,T,"A6i","A6i");
+			addNotes("F6i+A6i+C7i",T);
+			addNotes("F3i A4i+C5i+F5i C4i A4i+C5i+F5i",B);
+						
+			thirdVoiceTime = trebleTime;
+
+// Measure 102
+						
+			addRest("i",T);
+			addNotes("B5s A5s B5s C6s D6i",T);
+			addNotes("B3i B4i+D5i+F5i F4i B4i+D5i+F5i",B);
+			addNotes("F6h+B6h+D7h",T,T);
+
+// Measure 103
+						
+			addNotes("D6s+F6s E6s",T);
+			tie(D,T,"D6i","D6i");
+			tie(A,T,"F6i","F6i");
+			addNotes("D6i+F6i+A6i",T);
+			addNotes("D3i A4i+D5i+F5i A3i A4i+D5i+F5i",B);
+
+// Measure 104
+						
+			thirdVoiceTime = trebleTime;
+						
+			addRest("i",T);
+			addNotes("G5s F#5s G5s A5s B5i",T);
+			addNotes("G3i B4i+D5i D4i B4i+D5i",B);
+			tie(D,T,T,"D6q","D6i.");
+			tie(D,T,T,"G6q","G6i.");
+			tie(A,T,T,"B6q","B6i.");
+			addNotes("G6s",T,T);
+
+// Measure 105
+						
+			addNotes("D6i G6s",T);
+			tie(A,T,"D6s","D6s");
+			addNotes("G6s D6i",T);
+			addNotes("B3i+B4i B4i+D5i G3i+G4i G#3i+G#4i",B);
+
+// Measure 106
+						
+			addNotes("C6q F6q",T);
+			addNotes("A3i+A4i A4i+C5i+F5i D4i A4i+D5i+F5i",B);
+
+// Measure 107
+						
+			addNotes("E6s G#6s Bn6s",T);
+			tie(A,T,"E7s","E7s");
+			addNotes("D7s Bn6s C7s",T);
+			addNotes("E4i Bn4i+D5i+F5i G#4i Bn4i+D5i+F5i",B);
+
+// Measure 108
+						
+			addNotes("A6q Bb6q",T);
+			addNotes("A4q+C5q+E5q Gn4i+C5i+E5i C4i",B);
+
+// Measure 109
+						
+			addNotes("F6s+A6s G#6s",T);
+			tie(D,T,"F6i","F6i");
+			tie(A,T,"A6i","A6i");
+			addNotes("F6i+A6i+C7i",T);
+			addNotes("F3i A4i+C5i+F5i C4i A4i+C5i+F5i",B);
+
+			thirdVoiceTime = trebleTime;
+						
+// Measure 110
+						
+			addRest("i",T);
+			addNotes("B5s A5s B5s C6s D6i",T);
+			addNotes("B3i B4i+D5i+F5i F4i A4i+C5i+F5i",B);
+			addNotes("F6h+B6h+D7h",T,T);
+
+// Measure 111
+						
+			addNotes("D6s+F6s E6s",T);
+			tie(D,T,"D6i","D6i");
+			tie(A,T,"F6i","F6i");
+			addNotes("D6i+F6i+A6i",T);
+			addNotes("D3i A4i+D5i+F5i A3i A4i+D5i+F5i",B);
+
+// Measure 112
+						
+			thirdVoiceTime = trebleTime;
+						
+			addRest("i",T);
+			addNotes("G5s F#5s G5s A5s B5i",T);
+			addNotes("G3i B4i+D5i D4i B4i+D5i",B);
+			tie(D,T,T,"D6q","D6i.");
+			tie(D,T,T,"G6q","G6i.");
+			tie(A,T,T,"B6q","B6i.");
+			addNotes("G6s",T,T);
+
+// Measure 113
+						
+			addNotes("D6i G6s",T);
+			tie(A,T,"D6s","D6s");
+			addNotes("G6s D6i",T);
+			addNotes("B3i+B4i B4i+D5i G3i+G4i G#3i+G#4i",B);
+
+// Measure 114
+						
+			addNotes("C6q G#5i.+Bn5i.+F6i. F6s",T);
+			addNotes("A3s+A4s F3s+F4s E3s+E4s D3s+D4s Db3q+Db4q",B);
+
+			thirdVoiceTime = trebleTime;
+						
+// Measure 115
+						
+			addNotes("A5s+C6s+A6s C6i+C7i",T);
+			tie(A,T,"G6s","G6s");
+			addNotes("C6s D6s E6s",T);
+			addNotes("C3i+C4i A4i+C5i+F5i C4i+C5i C3i+C4i",B);
+			addRest("s",T,T);
+			addRest("s",T,T);
+			tie(A,T,T,"B5s","B5i");
+			addNotes("B5i",T,T);
+			
+// Measure 116
+			
+			addNotes("A5i+F6i",T);
+			addRest("i",T);
+			addNotes("F6i+A6i+C7i+F7i",T);
+			addRest("i",T);
+			addNotes("F3i+F4i",B);
+			addRest("i",B);
+			addNotes("F2i+F3i",B);
+			addRest("i",B);
+			
+
 			System.out.println("Third Voice Time" + thirdVoiceTime);
 			System.out.println("Treble Time is " + trebleTime);
 			System.out.println("Bass Time is " + bassTime);
-			
-			
-			
+						
 
 			
 			
