@@ -1013,10 +1013,6 @@ public class Util {
 			addNotes("F6i+A6i+C7i",T);
 			addNotes("F3i A4i+C5i+F5i C4i A4i+C5i+F5i",B);
 
-			System.out.println("Third Voice Time" + thirdVoiceTime);
-			System.out.println("Treble Time is " + trebleTime);
-			System.out.println("Bass Time is " + bassTime);
-			
 			thirdVoiceTime = trebleTime;
 			
 // Measure 94
@@ -1025,7 +1021,7 @@ public class Util {
 			addNotes("B5s A5s B5s C6s D6i",T);
 			addNotes("B3i B4i+D5i+F5i F4i A4i+C5i+F5i",B);
 			addNotes("F6h+B6h+D7h",T,T);
-			
+
 // Measure 95
 			
 			addNotes("D6s+F6s E6s",T);
@@ -1033,7 +1029,7 @@ public class Util {
 			tie(A,T,"F6i","F6i");
 			addNotes("D6i+F6i+A6i",T);
 			addNotes("D3i A4i+D5i+F5i A3i A4i+D5i+F5i",B);
-			
+
 // Measure 96
 			
 			thirdVoiceTime = trebleTime;
@@ -1045,18 +1041,18 @@ public class Util {
 			tie(D,T,T,"G6q","G6i.");
 			tie(A,T,T,"B6q","B6i.");
 			addNotes("G6s",T,T);
-			
+
 // Measure 97
 			
 			addNotes("D6i G6s",T);
 			tie(A,T,"D6s","D6s");
 			addNotes("G6s D6i",T);
 			addNotes("B3i+B4i B4i+D5i G3i+G4i G#3i+G#4i",B);
-			
+
 // Measure 98
 			
 			addNotes("C6q G#5i.+Bn5i.+F6i. F6s",T);
-			addNotes("A3s+A4s F3s+F4s E3s+E4s D3s+D4s Db3i+Db4i",B);
+			addNotes("A3s+A4s F3s+F4s E3s+E4s D3s+D4s Db3q+Db4q",B);
 
 			thirdVoiceTime = trebleTime;
 			
@@ -1070,7 +1066,7 @@ public class Util {
 			addRest("s",T,T);
 			tie(A,T,T,"B5s","B5i");
 			addNotes("B5i",T,T);
-			
+
 // Measure 100
 			
 			addNotes("A5i+F6i Bn5s C6s D6s E6s F6s G6s",T);
@@ -1078,6 +1074,9 @@ public class Util {
 			addRest("i",B);
 			addRest("q",B);
 
+			System.out.println("Third Voice Time" + thirdVoiceTime);
+			System.out.println("Treble Time is " + trebleTime);
+			System.out.println("Bass Time is " + bassTime);
 			
 			
 			
