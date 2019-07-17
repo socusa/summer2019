@@ -80,6 +80,14 @@ public class CreatingMusic extends JFrame implements ActionListener {
 		map.put("Bb",70);
 		map.put("B", 71);
 		
+		map.put("Cn", 60);
+		map.put("Dn", 62);
+		map.put("En", 64);
+		map.put("Fn", 65);
+		map.put("Gn", 67);
+		map.put("An", 69);
+		map.put("Bn", 71);
+		
 		switch (key.toUpperCase()) {
 		case "G" : { map.put("F",66); 
 		             break; }
@@ -311,6 +319,44 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	    	bassTime = (!treble) ? temp : bassTime;
 	    } 
 	}
+
+	public static void addNote(String noteName,
+			                   int duration,
+			                   int octave,
+			                   boolean advance,
+			                   boolean treble,
+			                   boolean third) {
+		int temp = (third) ? thirdVoiceTime : fourthVoiceTime;
+	       
+	    ShortMessage message = new ShortMessage();
+	       
+	    try {
+			message.setMessage(144,1,getNote(noteName,octave),120);
+		} catch (InvalidMidiDataException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       
+	    track.add(new MidiEvent(message,temp));
+	    
+	    temp += duration;
+	       
+	    message = new ShortMessage();
+	       
+	    try {
+			message.setMessage(128,1,getNote(noteName,octave),120);
+		} catch (InvalidMidiDataException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	       
+	    track.add(new MidiEvent(message,temp));
+	    
+	    if (advance) {
+	        thirdVoiceTime = (third) ? temp : thirdVoiceTime;
+	    	fourthVoiceTime = (!third) ? temp : fourthVoiceTime;
+	    } 
+	}
 	
 	public static void addNotes(String notes,
 			                    boolean treble) {
@@ -326,6 +372,25 @@ public class CreatingMusic extends JFrame implements ActionListener {
 					addNote(tokens1[counter1],false,treble);
 				
 				addNote(tokens1[tokens1.length-1],true,treble);
+			}			
+		}
+	}
+
+	public static void addNotes(String notes,
+			                    boolean treble,
+			                    boolean third) {
+		String[] tokens = notes.split(" ");
+		
+		for (int counter=0;counter<tokens.length;counter++) {
+			if (!tokens[counter].contains("+"))
+				addNote(tokens[counter],true,treble,third);
+			else {
+				String[] tokens1 = tokens[counter].split("\\+");
+				
+				for (int counter1=0;counter1<tokens1.length-1;counter1++)
+					addNote(tokens1[counter1],false,treble,third);
+				
+				addNote(tokens1[tokens1.length-1],true,treble,third);
 			}			
 		}
 	}
@@ -384,6 +449,57 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	    			octaves[0],
 	    			advance,
 	    			treble);	    	
+	    }
+	}
+
+	public static void tie(boolean advance,
+			               boolean treble,
+			               boolean third,
+			               String... notes) {
+		String[] noteNames = new String[notes.length];
+		String[] durations = new String[notes.length];
+		int[] octaves = new int[notes.length];
+		
+		int duration = 0;
+		
+		for (int counter=0;counter<notes.length;counter++) {
+		   String[] tokens = notes[counter].split("\\d");
+
+	       noteNames[counter] = tokens[0];
+	       durations[counter] = tokens[1];
+	       
+	       duration += lengthOfDuration(durations[counter]);
+	       
+	       octaves[counter] = Integer.parseInt(notes[counter].substring(noteNames[counter].length(),noteNames[counter].length()+1));
+		}
+		
+	    String error = "";
+	    
+	    boolean noteNamesNotTheSame = false;
+	    
+	    for (int counter=1;counter<notes.length;counter++)
+	    	noteNamesNotTheSame &= (noteNames[0].equals(noteNames[counter]));
+	    
+        boolean octavesNotTheSame = false;
+	    
+	    for (int counter=1;counter<notes.length;counter++)
+	    	octavesNotTheSame &= (octaves[0] == octaves[counter]);
+	    
+	    if (noteNamesNotTheSame)
+	    	error += "The note names are not the same\n";
+	    
+	    if (octavesNotTheSame)
+	    	error += "The octaves are not the same";
+	    
+	    if (!error.equals(""))
+	    	JOptionPane.showMessageDialog(null, error);
+	    else {
+	    	addNote(noteNames[0],
+	    			duration,
+	    			octaves[0],
+	    			advance,
+	    			treble,
+	    			third);	    	
 	    }
 	}
 
