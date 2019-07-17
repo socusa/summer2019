@@ -26,6 +26,8 @@ import javax.swing.JOptionPane;
 public class CreatingMusic extends JFrame implements ActionListener {
 	public static int trebleTime;
 	public static int bassTime;
+	public static int thirdVoiceTime;
+	public static int fourthVoiceTime;
 	public static final boolean T = true;
 	public static final boolean B = false;
 	public static final boolean A = true; // Advance
@@ -228,6 +230,48 @@ public class CreatingMusic extends JFrame implements ActionListener {
        if (advance) {
     	   trebleTime = (treble) ? temp : trebleTime;
     	   bassTime = (!treble) ? temp : bassTime;
+       }
+	}
+
+	public static void addNote(String note,
+                               boolean advance,
+                               boolean treble,
+                               boolean third) {
+       String[] tokens = note.split("\\d");
+
+       String noteName = tokens[0];
+       String duration = tokens[1];
+       int octave = Integer.parseInt(note.substring(noteName.length(),noteName.length()+1));
+       
+       int temp = (third) ? thirdVoiceTime : fourthVoiceTime;
+       
+       ShortMessage message = new ShortMessage();
+       
+       try {
+		message.setMessage(144,1,getNote(noteName,octave),120);
+       } catch (InvalidMidiDataException e) {
+    	   // TODO Auto-generated catch block
+    	   e.printStackTrace();
+       }
+       
+       track.add(new MidiEvent(message,temp));
+       
+       temp += lengthOfDuration(duration);
+       
+       message = new ShortMessage();
+       
+       try {
+		message.setMessage(128,1,getNote(noteName,octave),120);
+       } catch (InvalidMidiDataException e) {
+    	   // TODO Auto-generated catch block
+    	   e.printStackTrace();
+       }
+       
+       track.add(new MidiEvent(message,temp));
+       
+       if (advance) {
+    	   thirdVoiceTime = (third) ? temp : thirdVoiceTime;
+    	   fourthVoiceTime = (!third) ? temp : fourthVoiceTime;
        }
 	}
 	

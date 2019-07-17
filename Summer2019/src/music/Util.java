@@ -874,7 +874,7 @@ public class Util {
 			tie(D,T,"F6q","F6i");
 			tie(A,T,"D7q","D7i");
 			addNotes("D5s D#5s",T);
-			addNotes("G4i+B4i G3i+B4i A3i+A4i B3i+B4i",B);
+			addNotes("G4i+B4i G3i+G4i A3i+A4i B3i+B4i",B);
 			
 // Measure 77
 			
@@ -902,7 +902,7 @@ public class Util {
 			tie(D,T,"E6q","E6i");
 			tie(A,T,"C7q","C7i");
 			addNotes("C6s+C7s D6s+D7s",T);
-			addNotes("B4i E4i+G4i+C5i G4i+C5i+E5i",B);
+			addNotes("C4i E4i+G4i+C5i G4i+C5i+E5i",B);
 			addRest("i",B);
 
 // Measure 81
@@ -936,6 +936,14 @@ public class Util {
 			addRest("i",T);
 			addNotes("C4i+G4i+C5i G3i+G4i C3i+C4i",B);
 			addRest("i",B);
+			
+// Measure 85
+			
+			addNotes("F6s+A6s G#6s",T);
+			tie(D,T,"F6s","F6s");
+			tie(A,T,"A6s","A6s");
+			addNotes("F6s+A6s+C7s",T);
+			addNotes("F3i A4i+C5i+F5i C4i A4i+C5i+F5i",B);
 
 			
 			
