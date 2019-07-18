@@ -292,8 +292,6 @@ public class Util {
 			Sequence sequence = new Sequence(Sequence.PPQ,4);
 				
 			track = sequence.createTrack();
-			
-			/*
 				
 // Measure 1
 			
@@ -878,7 +876,7 @@ public class Util {
 			addNotes("D5s D#5s",T);
 			addNotes("G4i+B4i G3i+G4i A3i+A4i B3i+B4i",B);
 			
-			*/
+			
 			
 // Measure 77
 			
@@ -894,8 +892,8 @@ public class Util {
 // Measure 79
 			
 			addNotes("E6s+G6s+E7s C6s+E6s+C7s D6s+F6s+D7s",T);
-			tie(D,T,"C6s","C6s");
 			tie(D,T,"E6s","E6s");
+			tie(D,T,"G6s","G6s");
 			tie(A,T,"E7s","E7s");
 			addNotes("B5s+D6s+B6s D6i+F6i+D7i",T);
 			addNotes("G3i E4i+G4i+C5i G3i F4i+G4i+B4i",B);
@@ -1144,7 +1142,7 @@ public class Util {
 			addNotes("F3i A4i+C5i+F5i C4i A4i+C5i+F5i",B);
 
 			thirdVoiceTime = trebleTime;
-						
+			
 // Measure 110
 						
 			addRest("i",T);
@@ -1179,6 +1177,7 @@ public class Util {
 			addNotes("G6s D6i",T);
 			addNotes("B3i+B4i B4i+D5i G3i+G4i G#3i+G#4i",B);
 
+
 // Measure 114
 						
 			addNotes("C6q G#5i.+Bn5i.+F6i. F6s",T);
@@ -1193,7 +1192,7 @@ public class Util {
 			addNotes("C6s D6s E6s",T);
 			addNotes("C3i+C4i A4i+C5i+F5i C4i+C5i C3i+C4i",B);
 			addRest("s",T,T);
-			addRest("s",T,T);
+			addRest("i",T,T);
 			tie(A,T,T,"B5s","B5i");
 			addNotes("B5i",T,T);
 			
@@ -1208,11 +1207,272 @@ public class Util {
 			addNotes("F2i+F3i",B);
 			addRest("i",B);
 			
+// Measure 117
+			
+			addNotes("C6i A5s",T);
+			tie(A,T,"C6s","C6s");
+			addNotes("A5s C6s A5s",T);
+			addNotes("F4i+A4i+C5i+F5i F4i+A4i+C5i+F5i F#4i+A4i+C#5i+D5i F#4i+A4i+C#5i+D5i",B);
+			
+// Measure 118
+			
+			addNotes("G5s C6s E6s",T);
+			tie(A,T,"G6s","G6s");
+			addNotes("E6s C6s G5s",T);
+			addNotes("G4i+C5i+E5i G4i+C5i+E5i G4i+C5i+E5i G4i+C5i+E5i",B);
+
+
+// Measure 119
+			
+			addNotes("F#5i+A5i F#5i+C6i F5s+E6s F5i+D6i",T);
+			addNotes("D4i+C5i D4i+A4i G4i+B4i G4i+B4i",B);
+	
+// Measure 120
+			
+			tie(D,T,"E5s","E5q");
+			tie(A,T,"C6s","C6q");
+			addNotes("C6i+E6i+G6i+C7i",T);
+			addRest("i",T);
+			addNotes("C4q+C5q C3i+C4i",B);
+			addRest("i",B);
+
+// Measure 121
+			
+			addNotes("D5i+F5i C#5s+E5s",T);
+			tie(D,T,"D5s","D5s");
+			tie(A,T,"F5s","F5s");
+			addNotes("C5s+E5s D5i+F5i",T);
+			addNotes("F3i F4i+A4i A3i F4i+A4i",B);
+			
+// Measure 122
+			
+			addRest("s",T);
+			addNotes("A5s F5s+D6s A5s C6s D6s C6s A5s",T);
+			addNotes("F3i F4i+A4i A3i F4i+A4i",B);
+
+// Measure 123
+			
+			addNotes("E5i+G5i D#5s+F#5s",T);
+			tie(D,T,"E5s","E5s");
+			tie(A,T,"G5s","G5s");
+			addNotes("D5s+F5s E5i+G5i",T);
+			addNotes("C4i E4i+G4i+C5i G3i E4i+G4i+C5i",B);
+
+// Measure 124
+			
+			addRest("s",T);
+			addNotes("C6s G5s+E6s C6s D6s E6s D6s C6s",T);
+			addNotes("C4i E4i+G4i+C5i G3i E4i+G4i+C5i",B);
+
+// Measure 125
+			
+			addNotes("B5i+D6i A#5s+C#6s",T);
+			tie(D,T,"B5s","B5s");
+			tie(A,T,"D6s","D6s");
+			addNotes("A5s+C6s B5i+D6i",T);
+			addNotes("G3i F4i+G4i+B4i B3i F4i+G4i+B4i",B);
+	
+// Measure 126
+			
+			addRest("s",T);
+			addNotes("F6s B5s+A6s F6s G6s A6s G6s F6s",T);
+			addNotes("G3i F4i+G4i+B4i D4i F4i+G4i+B4i",B);
+
+			
+// Measure 127
+			
+			addNotes("C6s+C7s C6s+C7s C6q+C7q C6i+A6i",T);
+			addNotes("D#4i+F#4i+C5i D#4q+F#4q+C5q D#4i+F#4i+C5i",B);
+			
+// Measure 128
+			
+			addNotes("C6i+G6i E5s+G5s E5s+G5s E5i+G5i E5i+G5i",T);
+			addNotes("E4i+G4i+C5i",B);
+			addRest("i",B);
+			addRest("q",B);
+			
+// Measure 129
+			
+			addNotes("D5i+F5i C#5s+E5s",T);
+			tie(D,T,"D5s","D5s");
+			tie(A,T,"F5s","F5s");
+			addNotes("C5s+E5s D5i+F5i",T);
+			addNotes("F3i F4i+A4i A3i F4i+A4i",B);
+			
+// Measure 130
+			
+			addRest("s",T);
+			addNotes("A5s F5s+D6s A5s C6s D6s C6s A5s",T);
+			addNotes("F3i F4i+A4i A3i F4i+A4i",B);
+			
+// Measure 131
+			
+			addNotes("E5i+G5i D#5s+F#5s",T);
+			tie(D,T,"E5s","E5s");
+			tie(A,T,"G5s","G5s");
+			addNotes("D5s+F5s E5i+G5i",T);
+			addNotes("C4i E4i+G4i+C5i G3i E4i+G4i+C5i",B);
+			
+// Measure 132
+			
+			addRest("s",T);
+			addNotes("C6s G5s+E6s C6s D6s E6s D6s C6s",T);
+			addNotes("C4i E4i+G4i+C5i G3i E4i+G4i+C5i",B);
+
+// Measure 133
+			
+			addNotes("A5s G#5s A5s",T);
+			tie(D,T,"A5s","A5s");
+			tie(A,T,"G6s","G6s");
+			addNotes("A5i+F6i A5s+C6s",T);
+			addNotes("F3i+F4i D3i+D4i E3i+E4i F3i+F4i",B);
+			
+// Measure 134
+			
+			addNotes("G5s+E6s D#6s E6s",T);
+			tie(A,T,"A6s","A6s");
+			addNotes("C7s G6s E6s",T);
+			addNotes("G3i+G4i G4i+C5i+E5i F#4i+C#5i+D5i G4i+C5i+E5i",B);
+			
+// Measure 135
+			
+			addNotes("F#5i+C6i F#5i+C6i Fn5s+B5s+E6s F5i+B5i+D6i",T);
+			addNotes("A3i+A4i D3i+D4i G3i+G4i B3i+B4i",B);
+			
+// Measure 136
+			
+			tie(D,T,"E5s","E5i");
+			tie(D,T,"G5s","G5i");
+			tie(A,T,"C6s","C6i");
+			addNotes("E5s+G5s E5s+G5s E5i+G5i E5i+G5i",T);
+			addNotes("C4i+C5i",B);
+			addRest("i",B);
+			addRest("q",B);
+			
+// Measure 137
+			
+			addNotes("D5i+F5i C#5s+E5s",T);
+			tie(D,T,"D5s","D5s");
+			tie(A,T,"F5s","F5s");
+			addNotes("C5s+E5s D5i+F5i",T);
+			addNotes("F3i F4i+A4i A3i F4i+A4i",B);
+						
+// Measure 138
+						
+			addRest("s",T);
+			addNotes("A5s F5s+D6s A5s C6s D6s C6s A5s",T);
+		    addNotes("F3i F4i+A4i A3i F4i+A4i",B);
+
+// Measure 139
+						
+			addNotes("E5i+G5i D#5s+F#5s",T);
+			tie(D,T,"E5s","E5s");
+			tie(A,T,"G5s","G5s");
+			addNotes("D5s+F5s E5i+G5i",T);
+			addNotes("C4i E4i+G4i+C5i G3i E4i+G4i+C5i",B);
+
+// Measure 140
+						
+			addRest("s",T);
+			addNotes("C6s G5s+E6s C6s D6s E6s D6s C6s",T);
+			addNotes("C4i E4i+G4i+C5i G3i E4i+G4i+C5i",B);
+
+// Measure 141
+						
+			addNotes("B5i+D6i A#5s+C#6s",T);
+			tie(D,T,"B5s","B5s");
+			tie(A,T,"D6s","D6s");
+			addNotes("A5s+C6s B5i+D6i",T);
+			addNotes("G3i F4i+G4i+B4i B3i F4i+G4i+B4i",B);
+				
+// Measure 142
+						
+			addRest("s",T);
+			addNotes("F6s B5s+A6s F6s G6s A6s G6s F6s",T);
+			addNotes("G3i F4i+G4i+B4i D4i F4i+G4i+B4i",B);
+			
+// Measure 143
+						
+			addNotes("C6s+C7s C6s+C7s C6q+C7q C6i+A6i",T);
+			addNotes("D#4i+F#4i+C5i D#4q+F#4q+C5q D#4i+F#4i+C5i",B);
+						
+// Measure 144
+						
+			addNotes("C6i+G6i E5s+G5s E5s+G5s E5i+G5i E5i+G5i",T);
+			addNotes("E4i+G4i+C5i",B);
+			addRest("i",B);
+			addRest("q",B);
+						
+// Measure 145
+						
+			addNotes("D5i+F5i C#5s+E5s",T);
+			tie(D,T,"D5s","D5s");
+			tie(A,T,"F5s","F5s");
+			addNotes("C5s+E5s D5i+F5i",T);
+			addNotes("F3i F4i+A4i A3i F4i+A4i",B);
+						
+// Measure 146
+						
+			addRest("s",T);
+			addNotes("A5s F5s+D6s A5s C6s D6s C6s A5s",T);
+			addNotes("F3i F4i+A4i A3i F4i+A4i",B);
+						
+// Measure 147
+						
+			addNotes("E5i+G5i D#5s+F#5s",T);
+			tie(D,T,"E5s","E5s");
+			tie(A,T,"G5s","G5s");
+			addNotes("D5s+F5s E5i+G5i",T);
+		    addNotes("C4i E4i+G4i+C5i G3i E4i+G4i+C5i",B);
+						
+// Measure 148
+						
+		    addRest("s",T);
+			addNotes("C6s G5s+E6s C6s D6s E6s D6s C6s",T);
+			addNotes("C4i E4i+G4i+C5i G3i E4i+G4i+C5i",B);
+
+// Measure 149
+						
+			addNotes("A5s G#5s A5s",T);
+			tie(D,T,"A5s","A5s");
+			tie(A,T,"G6s","G6s");
+			addNotes("A5i+F6i A5s+C6s",T);
+			addNotes("F3i+F4i D3i+D4i E3i+E4i F3i+F4i",B);
+						
+// Measure 150
+						
+			addNotes("G5s+E6s D#6s E6s",T);
+		    tie(A,T,"A6s","A6s");
+			addNotes("C7s G6s E6s",T);
+			addNotes("G3i+G4i G4i+C5i+E5i F#4i+C#5i+D5i G4i+C5i+E5i",B);
+
+// Measure 151
+						
+			addNotes("F#5i+C6i F#5i+C6i Fn5s+B5s+E6s F5i+B5i+D6i",T);
+			addNotes("A3i+A4i D3i+D4i G3i+G4i B3i+B4i",B);
+
+// Measure 152
+			
+			tie(D,T,"E5s","E5q");
+			tie(D,T,"G5s","G5q");
+			tie(A,T,"C6s","C6q");
+			addNotes("C6i+E6i+G6i+C7i",T);
+			addRest("i",T);
+			addNotes("C4i+C5i G3i+G4i C3i+C4i",B);
+			addRest("i",B);
+									
 
 			System.out.println("Third Voice Time" + thirdVoiceTime);
 			System.out.println("Treble Time is " + trebleTime);
 			System.out.println("Bass Time is " + bassTime);
-						
+				
+			
+			
+			
+			
+					
+			
+				
 
 			
 			
