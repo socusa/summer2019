@@ -59,7 +59,7 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	    
 	    play.addActionListener(this);
 	    
-	    
+	    getNote("A",5);
 	}
 	
 	/*

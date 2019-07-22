@@ -1,12 +1,12 @@
 package music;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.MidiEvent;
 import javax.sound.midi.ShortMessage;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; 
 
 import static music.CreatingMusic.*;
 import static music.Util.getNote;
@@ -16,7 +16,7 @@ public class Util {
 
 	public static int getNote(String noteName,
 			                  int octave) {
-		Map<String,Integer> map = new HashMap<>();
+		Map<String,Integer> map = new TreeMap<>();
 		
 		map.put("C", 60);
 		map.put("C#", 61);
@@ -25,6 +25,7 @@ public class Util {
 		map.put("D#", 63);
 		map.put("Eb",63);
 		map.put("E", 64);
+		map.put("E#", 65);
 		map.put("F", 65);
 		map.put("F#", 66);
 		map.put("Gb",66);
@@ -35,6 +36,7 @@ public class Util {
 		map.put("A#", 70);
 		map.put("Bb",70);
 		map.put("B", 71);
+		map.put("B#",60);
 		
 		map.put("Cn", 60);
 		map.put("Dn", 62);
@@ -67,19 +69,30 @@ public class Util {
 		            break;
 		}
 		
-		System.out.println(map);
+	//	System.out.println(map);
 		
 		return(map.get(noteName) + (octave - 5)*12);
 	}
 	
 	public static int lengthOfDuration(String duration) {
-		Map<String,Integer> map = new HashMap<>();
+		Map<String,Integer> map = new TreeMap<>();
 		
+		/*
+		 
 		map.put("s", 1);
 		map.put("i", 2);
 		map.put("q", 4);
 		map.put("h", 8);
 		map.put("w", 16);
+		
+		*/
+		
+		map.put("t", 1);
+		map.put("s", 2);
+		map.put("i", 4);
+		map.put("q", 8);
+		map.put("h", 16);
+		map.put("w", 32);
 		
 		if (!duration.endsWith("."))		
 		   return(map.get(duration));
@@ -387,7 +400,6 @@ public class Util {
 	    }
 	}
 
-
 	public static void addRest(String duration,
                                boolean treble) {
        if (treble)
@@ -395,6 +407,16 @@ public class Util {
        else
     	   bassTime += lengthOfDuration(duration);
 	}
+	
+	public static void addRest(String duration,
+			                   int numberOfTimes,
+                               boolean treble) {
+		for (int counter=0;counter<numberOfTimes;counter++)
+            if (treble)
+                trebleTime += lengthOfDuration(duration);
+            else
+                bassTime += lengthOfDuration(duration);
+    }
 
 	public static void addRest(String duration,
                                boolean treble,
@@ -403,6 +425,17 @@ public class Util {
     	   thirdVoiceTime += lengthOfDuration(duration);
        else
     	   fourthVoiceTime += lengthOfDuration(duration);
+	}
+	
+	public static void addRest(String duration,
+			                   int numberOfTimes,
+                               boolean treble,
+                               boolean third) {
+		for (int counter=0;counter<numberOfTimes;counter++)
+            if (third)
+    	        thirdVoiceTime += lengthOfDuration(duration);
+            else
+    	        fourthVoiceTime += lengthOfDuration(duration);
 	}
 	
 }
