@@ -1863,12 +1863,853 @@ public class Songs {
             addNote("C6q",A,T);
             addNotes("C5q+E5q",B);
 
+// Measure 80
+            
+            addNotes("C7s D7s C7s B6s",T);
+            addRest("q",B);
+            
+// Measure 81
+            
+            addNotes("A6s B6s A6s G6s F6s A6s G6s F6s",T);
+            addNotes("F4i A4i+C5i A4i+C5i A4i+C5i",B);
+            
+// Measure 82
+            
+            addNotes("E#6s F6s G6s E6s C6s D#6s E6s C6s",T);
+            addNotes("G4i B4i+C5i B4i+C5i B4i+C5i",B);
+            
+// Measure 83
+            
+            addNotes("F6s E#6s F6s G6s A6s G6s A6s B6s",T);
+            addNotes("F4i A4i+C5i A4i+C5i A4i+C5i",B);
+            
+// Measure 84
+            
+            addNotes("C7s B#6s C7s B6s C7s D7s C7s Bn6s",T);
+            addNotes("E#4i G4i+C5i G4i+C5i G4i+C5i",B);
+            
+// Measure 85
+            
+            addNotes("A6s B6s A6s G6s F6s A6s G6s F6s",T);
+            addNotes("F4i A4i+C5i A4i+C5i A4i+C5i",B);
+            
+// Measure 86
+            
+            addNotes("En6s F6s G6s E6s C6s D#6s E6s C6s",T);
+            addNotes("G4i C5i+En5i C5i+En5i C5i+En5i",B);
+            
+// Measure 87
+            
+            addNotes("D#6s E6s F6s D#6s B#5s C6s D#6s B5s",T);
+            addNotes("G4i D#5i+F5i D#5i+F5i D#5i+F5i",B);
+            
+// Measure 88
+            
+            addNote("C6q",A,T);
+            addNotes("C5q+E5q",B);
+            
+// Measure 89
+            
+            addNotes("E6s Dn6s C6s Bn5s",T);
+            addRest("q",B);
+            
+// Measure 90
+            
+            addNotes("A5s B5s C6s D6s E6s F6s G6s A6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 91
+            
+            addNotes("A6s G6s F6s E6s E6s D6s C6s B5s",T);
+            addNotes("B4i D5i+E5i G4i D5i+E5i",B);
+            
+// Measure 92
+            
+            addNotes("A5s B5s C6s D6s E6s F6s G6s A6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 93
+            
+            addNotes("A#6i B6i E6s D6s C6s B5s",T);
+            addNotes("E4i G4i+D5i G4i+D5i G4i+D5i",B);
+            
+// Measure 94
+            
+            addNotes("A5s B5s C6s D6s E6s F6s G6s A6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 95
+            
+            addNotes("A6s G6s F6s E6s E6s D6s C6s B5s",T);
+            addNotes("B4i D5i+E5i G4i D5i+E5i",B);
+            
+// Measure 96
+            
+            addNotes("C6s E6s A5s C6s B5s D6s G5s B5s",T);
+            addNotes("A4i F4i D4i E4i",B);
+            
+// Measure 97
+            
+            addNotes("A5q C7s D7s C7s B6s",T);
+            addNotes("A3i A4i",B);
+            addRest("q",B);
+            
+// Measure 98
+            
+            addNotes("A6s B6s A6s G6s F6s A6s G6s F6s",T);
+            addNotes("F4i A4i+C5i A4i+C5i A4i+C5i",B);
+            
+// Measure 99
+            
+            addNotes("E#6s F6s G6s E#6s C6s D#6s E6s C6s",T);
+            addNotes("G4i B4i+C5i B4i+C5i B4i+C5i",B);
+            
+// Measure 100
+            
+            addNotes("F6s E#6s F6s G6s A6s G6s A6s B6s",T);
+            addNotes("F4i A4i+C5i A4i+C5i A4i+C5i",B);
+            
+// Measure 101
+            
+            addNotes("C7s B#6s C7s B6s C7s B6s C7s A#6s",T);
+            addNotes("C4i G4i+C5i Gn4i+C5i F4i+C5i",B);
+            
+// Measure 102
+            
+            addNotes("D7s C7s D7s C7s D7s C7s D7s C7s",T);
+            addNotes("B3i F4i+B4i F4i+B4i F4i+B4i",B);
+            
+// Measure 103
+            
+            addNotes("D7s C7s B6s A6s G6s A6s B6s G6s",T);
+            addNotes("B3i G#4i+B4i G#4i+B4i G#4i+B4i",B);
+            
+// Measure 104
+            
+            addNotes("A6s B6s C7s F6s E#6s F6s G6s E6s",T);
+            addNotes("C4i F4i+A4i C4i G4i+B4i",B);
+            
+// Measure 105
+            
+            addNote("F6q",A,T);
+            addNotes("F4q+A4q",B);
+
+// Measure 106
+            
+            addNotes("E6s Dn6s C6s Bn5s",T);
+            addRest("q",B);
+            
+// Measure 107
+            
+            addNotes("A5s B5s C6s D6s E6s F6s G6s A6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 108
+            
+            addNotes("A6s G6s F6s E6s E6s D6s C6s B5s",T);
+            addNotes("B4i D5i+E5i G4i D5i+E5i",B);
+            
+// Measure 109
+            
+            addNotes("A5s B5s C6s D6s E6s F6s G6s A6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 110
+            
+            addNotes("A#6i B6i E6s D6s C6s B5s",T);
+            addNotes("E4i G4i+D5i G4i+D5i G4i+D5i",B);
+            
+// Measure 111
+            
+            addNotes("A5s B5s C6s D6s E6s F6s G6s A6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 112
+            
+            addNotes("A6s G6s F6s E6s E6s D6s C6s B5s",T);
+            addNotes("B4i D5i+E5i G4i D5i+E5i",B);
+            
+// Measure 113
+            
+            addNotes("C6s E6s A5s C6s B5s D6s G5s B5s",T);
+            addNotes("A4i F4i D4i E4i",B);
+            
+// Measure 114
+            
+            addNotes("A5q C7s D7s C7s B6s",T);
+            addNotes("A3i A4i",B);
+            addRest("q",B);
+            
+// Measure 115
+            
+            addNotes("A6s B6s A6s G6s F6s A6s G6s F6s",T);
+            addNotes("F4i A4i+C5i A4i+C5i A4i+C5i",B);
+            
+// Measure 116
+            
+            addNotes("E#6s F6s G6s E#6s C6s D#6s E6s C6s",T);
+            addNotes("G4i B4i+C5i B4i+C5i B4i+C5i",B);
+            
+// Measure 117
+            
+            addNotes("F6s E#6s F6s G6s A6s G6s A6s B6s",T);
+            addNotes("F4i A4i+C5i A4i+C5i A4i+C5i",B);
+            
+// Measure 118
+            
+            addNotes("C7s B#6s C7s B6s C7s B6s C7s A#6s",T);
+            addNotes("C4i G4i+C5i Gn4i+C5i F4i+C5i",B);
+            
+// Measure 119
+            
+            addNotes("D7s C7s D7s C7s D7s C7s D7s C7s",T);
+            addNotes("B3i F4i+B4i F4i+B4i F4i+B4i",B);
+            
+// Measure 120
+            
+            addNotes("D7s C7s B6s A6s G6s A6s B6s G6s",T);
+            addNotes("B3i G#4i+B4i G#4i+B4i G#4i+B4i",B);
+            
+// Measure 121
+            
+            addNotes("A6s B6s C7s F6s E#6s F6s G6s E6s",T);
+            addNotes("C4i F4i+A4i C4i G4i+B4i",B);
+            
+// Measure 122
+            
+            addNote("F6q",A,T);
+            addNotes("F4q+A4q",B);
+            
+// Measure 123
+            
+            addNotes("A5i+A6i B5i+B6i",T);
+            addRest("q",B);
+            
+// Measure 124
+            
+            addNotes("C6q+C7q A5i+A6i B5i+B6i",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 125
+            
+            addNotes("C6i+C7i B5i+B6i A5i+A6i G5i+G6i",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 126
+            
+            addNotes("F5i+F6i G5i+G6i A5i+A6i B5i+B6i",T);
+            addNotes("D4i D4i D#4i D#4i",B);
+            
+// Measure 127
+            
+            addNotes("G5i+G6i E5i+E6i A5i+A6i B5i+B6i",T);
+            addNotes("E4i E4i E4i E4i",B);
+            
+// Measure 128
+            
+            addNotes("C6q+C7q A5i+A6i B5i+B6i",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 129
+            
+            addNotes("C6i+C7i B5i+B6i A5i+A6i G5i+G6i",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 130
+            
+            addNotes("F5i+F6i B5i+B6i G5i+G6i E5i+E6i",T);
+            addNotes("D4i D4i E4i E4i",B);
+            
+// Measure 131
+            
+            addNotes("A5q+A6q",T);
+            addNote("A3q",A,B);
+            
+// Measure 132
+            
+            addNotes("A5i+A6i B5i+B6i",T);
+            addRest("q",B);
+            
+// Measure 133
+            
+            addNotes("C6q+C7q A5i+A6i B5i+B6i",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 134
+            
+            addNotes("C6i+C7i B5i+B6i A5i+A6i G5i+G6i",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 135
+            
+            addNotes("F5i+F6i G5i+G6i A5i+A6i B5i+B6i",T);
+            addNotes("D4i D4i D#4i D#4i",B);
+            
+// Measure 136
+            
+            addNotes("G5i+G6i E5i+E6i A5i+A6i B5i+B6i",T);
+            addNotes("E4i E4i E4i E4i",B);
+            
+// Measure 137
+            
+            addNotes("C6q+C7q A5i+A6i B5i+B6i",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 138
+            
+            addNotes("C6i+C7i B5i+B6i A5i+A6i G5i+G6i",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 139
+            
+            addNotes("F5i+F6i B5i+B6i G5i+G6i E5i+E6i",T);
+            addNotes("D4i D4i E4i E4i",B);
+            
+// Measure 140
+            
+            addNotes("A5q+A6q",T);
+            addNote("A3q",A,B);
+            
+            key = "C";
+            
+// Measure 141
+            
+            addNotes("B5s A5s G#5s A5s",T);
+            addRest("q",B);
+            
+// Measure 142
+            
+            addNote("C6i",A,T);
+            addRest("i",T);
+            addNotes("D6s C6s B5s C6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 143
+            
+            addNote("E6i",A,T);
+            addRest("i",T);
+            addNotes("F6s E6s D#6s E6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 144
+            
+            addNotes("B6s A6s G#6s A6s B6s A6s G6s A6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 145
+            
+            addNotes("C7q A6i C7i",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 146
+            
+            addNotes("B6i F#6i+A6i E6i+G6i F6i+A6i",T);
+            addNotes("E4i B4i+E5i B4i+E5i B4i+E5i",B);
+            
+// Measure 147
+            
+            addNotes("B6i F#6i+A6i E6i+G6i F6i+A6i",T);
+            addNotes("E4i B4i+E5i B4i+E5i B4i+E5i",B);
+            
+// Measure 148
+            
+            addNotes("B6i F#6i+A6i E6i+G6i D#6i+F6i",T);
+            addNotes("E4i B4i+E5i B3i B4i",B);
+            
+// Measure 149
+            
+            addNote("E6q",A,T);
+            addNote("E4q",A,B);
+            
+// Measure 150
+            
+            addNotes("B5s A5s G#5s A5s",T);
+            addRest("q",B);
+            
+// Measure 151
+            
+            addNote("C6i",A,T);
+            addRest("i",T);
+            addNotes("D6s C6s B5s C6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 152
+            
+            addNote("E6i",A,T);
+            addRest("i",T);
+            addNotes("F6s E6s D#6s E6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 153
+            
+            addNotes("B6s A6s G#6s A6s B6s A6s G6s A6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 154
+            
+            addNotes("C7q A6i C7i",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+            
+// Measure 155
+            
+            addNotes("B6i F#6i+A6i E6i+G6i F6i+A6i",T);
+            addNotes("E4i B4i+E5i B4i+E5i B4i+E5i",B);
+            
+// Measure 156
+            
+            addNotes("B6i F#6i+A6i E6i+G6i F6i+A6i",T);
+            addNotes("E4i B4i+E5i B4i+E5i B4i+E5i",B);
+            
+// Measure 157
+            
+            addNotes("B6i F#6i+A6i E6i+G6i D#6i+F6i",T);
+            addNotes("E4i B4i+E5i B3i B4i",B);
+            
+// Measure 158
+            
+            addNote("E6q",A,T);
+            addNote("E4q",A,B);
+            
+// Measure 159
+            
+            addNotes("C6i+E6i Dn6i+Fn6i",T);
+            addRest("q",B);
+            
+// Measure 160
+            
+            addNotes("E6i+G6i E6i+G6i A6s G6s F6s E6s",T);
+            addNotes("C4i C5i E4i E5i",B);
+
+            thirdVoiceTime = trebleTime;
+            
+// Measure 161
+            
+            addNotes("B5i G5i C6i+E6i Dn6i+Fn6i",T);
+            addNote("G4q",A,B);
+            addRest("q",B);
+            addNote("D6q",A,T,T);
+            
+// Measure 162
+            
+            addNotes("E6i+G6i E6i+G6i A6s G6s F6s E6s",T);
+            addNotes("C4i C5i E4i E5i",B);
+            
+// Measure 163
+            
+            addNotes("B5q+D6q A5i+C6i B5i+D6i",T);
+            addNote("G4q",A,B);
+            addRest("q",B);
+            
+// Measure 164
+            
+            addNotes("C6i+E6i D6i+E6i F6s E6s D6s C6s",T);
+            addNotes("A3i A4i C4i C5i",B);
+            
+            thirdVoiceTime = trebleTime;
+            
+// Measure 165
+            
+            addNotes("G#5i E5i A5i+C6i B5i+D6i",T);
+            addNote("E4q",A,B);
+            addRest("q",B);
+            addNote("B5q",A,T,T);
+            
+// Measure 166
+            
+            addNotes("C6i+E6i C6i+E6i F6s E6s D6s C6s",T);
+            addNotes("A3i A4i C4i C5i",B);
+            
+// Measure 167
+            
+            addNotes("G#5q+B5q B5s A5s G5s A5s",T);
+            addNote("E4q",A,B);
+            addRest("q",B);
+            
+// Measure 168
+            
+            addNote("C6i",A,T);
+            addRest("i",T);
+            addNotes("D6s C6s B5s C6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+
+// Measure 169
+            
+            addNote("E6i",A,T);
+            addRest("i",T);
+            addNotes("F6s E6s D#6s E6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+
+// Measure 170
+            
+            addNotes("B6s A6s G#6s A6s B6s A6s G6s A6s",T);
+            addNotes("A4i C5i+E5i A4i C5i+E5i",B);
+
+// Measure 171
+            
+            addNotes("C7q A6i B6i",T);
+            addNotes("F4i A4i+D#5i A4i+D#5i A4i+D#5i",B);
+
+// Measure 172
+            
+            addNotes("C7i B6i A6i G#6i",T);
+            addNotes("E4i A4i+E5i Dn4i F4i+B4i",B);
+
+// Measure 173
+            
+            addNotes("A6i E6i F6i D6i",T);
+            addNotes("C4i E4i+A4i D4i F4i+B4i",B);
+
+// Measure 174
+            
+            addNotes("C6q B5i. A5t B5t",T);
+            addNotes("E4i+A4i E4i+A4i E4i+G#4i E4i+G#4i",B);
+
+// Measure 175
+            
+            addNote("A5q",A,T);
+            addNotes("A3q+A4q",B);
+            
+// Measure 176
+            
+            addNotes("C6i+E6i Dn6i+Fn6i",T);
+            addRest("q",B);
+            
+// Measure 177
+            
+            addNotes("E6i+G6i E6i+G6i A6s G6s F6s E6s",T);
+            addNotes("C4i C5i E4i E5i",B);
+
+            thirdVoiceTime = trebleTime;
+            
+// Measure 178
+            
+            addNotes("B5i G5i C6i+E6i Dn6i+Fn6i",T);
+            addNote("G4q",A,B);
+            addRest("q",B);
+            addNote("D6q",A,T,T);
+            
+// Measure 179
+            
+            addNotes("E6i+G6i E6i+G6i A6s G6s F6s E6s",T);
+            addNotes("C4i C5i E4i E5i",B);
+            
+// Measure 180
+            
+            addNotes("B5q+D6q A5i+C6i B5i+D6i",T);
+            addNote("G4q",A,B);
+            addRest("q",B);
+            
+// Measure 181
+            
+            addNotes("C6i+E6i D6i+E6i F6s E6s D6s C6s",T);
+            addNotes("A3i A4i C4i C5i",B);
+            
+            thirdVoiceTime = trebleTime;
+            
+// Measure 182
+            
+            addNotes("G#5i E5i A5i+C6i B5i+D6i",T);
+            addNote("E4q",A,B);
+            addRest("q",B);
+            addNote("B5q",A,T,T);
+            
+// Measure 183
+            
+            addNotes("C6i+E6i C6i+E6i F6s E6s D6s C6s",T);
+            addNotes("A3i A4i C4i C5i",B);
+            
+// Measure 184
+            
+            addNotes("G#5q+B5q B5s A5s G5s A5s",T);
+            addNote("E4q",A,B);
+            addRest("q",B);
+            
+// Measure 185
+            
+            addNote("C6i",A,T);
+            addRest("i",T);
+            addNotes("D6s C6s B5s C6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+
+// Measure 186
+            
+            addNote("E6i",A,T);
+            addRest("i",T);
+            addNotes("F6s E6s D#6s E6s",T);
+            addNotes("A4i C5i+E5i C5i+E5i C5i+E5i",B);
+
+// Measure 187
+            
+            addNotes("B6s A6s G#6s A6s B6s A6s G6s A6s",T);
+            addNotes("A4i C5i+E5i A4i C5i+E5i",B);
+
+// Measure 188
+            
+            addNotes("C7q A6i B6i",T);
+            addNotes("F4i A4i+D#5i A4i+D#5i A4i+D#5i",B);
+
+// Measure 189
+            
+            addNotes("C7i B6i A6i G#6i",T);
+            addNotes("E4i A4i+E5i Dn4i F4i+B4i",B);
+
+// Measure 190
+            
+            addNotes("A6i E6i F6i D6i",T);
+            addNotes("C4i E4i+A4i D4i F4i+B4i",B);
+
+// Measure 191
+            
+            addNotes("C6q B5i. A5t B5t",T);
+            addNotes("E4i+A4i E4i+A4i E4i+G#4i E4i+G#4i",B);
+
+// Measure 192
+            
+            addNote("A5q",A,T);
+            addNotes("A3q+A4q",B);
+            
+            key = "A";
+            
+// Measure 193
+            
+            addNotes("A5s A6s B5s B6s",T);
+            addRest("q",B);
+
+// Measure 194
+            
+            addNotes("C6s C7s",T);
+            addRest("i",T);
+            addNotes("A5s A6s B5s B6s",T);
+            addNotes("A4i A4i A4i A4i",B);
+  
+// Measure 195
+            
+            addNotes("C6s C7s B5s B6s A5s A6s G5s G6s",T);
+            addNotes("A4i A4i A4i A4i",B);
+
+// Measure 196
+            
+            addNotes("F5s F6s G5s G6s A5s A6s B5s B6s",T);
+            addNotes("D4i D4i D#4i D#4i",B);
+
+// Measure 197
+            
+            addNotes("G5s G6s E5s E6s A5s A6s B5s B6s",T);
+            addNotes("E4i E4i E4i E4i",B);
+
+// Measure 198
+            
+            addNotes("C6s C7s",T);
+            addRest("i",T);
+            addNotes("A5s A6s B5s B6s",T);
+            addNotes("A4i A4i A4i A4i",B);
+ 
+// Measure 199
+            
+            addNotes("C6s C7s B5s B6s A5s A6s G5s G6s",T);
+            addNotes("A4i A4i A4i A4i",B);
+
+// Measure 200
+            
+            addNotes("F5s F6s B5s B6s G5s G6s E5s E6s",T);
+            addNotes("D4i D4i E4i E4i",B);
+
+// Measure 201
+            
+            addNotes("A5q+A6q",T);
+            addNote("A3q",A,B);
+            
+// Measure 202
+            
+            addNotes("A5s A6s B5s B6s",T);
+            addRest("q",B);
+
+// Measure 203
+            
+            addNotes("C6s C7s",T);
+            addRest("i",T);
+            addNotes("A5s A6s B5s B6s",T);
+            addNotes("A4i A4i A4i A4i",B);
+  
+// Measure 204
+            
+            addNotes("C6s C7s B5s B6s A5s A6s G5s G6s",T);
+            addNotes("A4i A4i A4i A4i",B);
+
+// Measure 205
+            
+            addNotes("F5s F6s G5s G6s A5s A6s B5s B6s",T);
+            addNotes("D4i D4i D#4i D#4i",B);
+
+// Measure 206
+            
+            addNotes("G5s G6s E5s E6s A5s A6s B5s B6s",T);
+            addNotes("E4i E4i E4i E4i",B);
+
+// Measure 207
+            
+            addNotes("C6s C7s",T);
+            addRest("i",T);
+            addNotes("A5s A6s B5s B6s",T);
+            addNotes("A4i A4i A4i A4i",B);
+ 
+// Measure 208
+            
+            addNotes("C6s C7s B5s B6s A5s A6s G5s G6s",T);
+            addNotes("A4i A4i A4i A4i",B);
+
+// Measure 209
+            
+            addNotes("F5s F6s B5s B6s G5s G6s E5s E6s",T);
+            addNotes("D4i D4i E4i E4i",B);
+            
+            thirdVoiceTime = trebleTime;
+            
+// Measure 210
+            
+            addNotes("A5q+A6q C7i. C7s",T);
+            addNotes("A4i A4i A4i A4i",B);
+            addRest("q",T,T);
+            addNote("C6q",A,T,T);
+
+            thirdVoiceTime = trebleTime;
+            
+// Measure 211
+            
+            addNotes("C6q+E6q+A6q",T);
+            addRest("q",T);
+            addNotes("A4i A4i A4i A4i",B);
+            addNote("C7h",A,T,T);
+
+            thirdVoiceTime = trebleTime;
+            
+// Measure 212
+            
+            addNotes("C6q+E6q+A6q",T);
+            addRest("q",T);
+            addNotes("A4i A4i A4i A4i",B);
+            addNote("C7h",A,T,T);
+
+// Measure 213
+            
+            addNotes("D7s C7s B6s C7s D7s C7s B6s C7s",T);
+            addNotes("A4i A4i A4i A4i",B);
+
+// Measure 214
+            
+            addNotes("F6h+A6h+D7h",T);
+            addNotes("D4i D4i D4i D4i",B);
+
+// Measure 215
+            
+            addNotes("E6i+A6i+C7i E6i+A6i+C7i E6i+A6i+C7i E6i+A6i+C7i",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+            thirdVoiceTime = trebleTime;
+            
+// Measure 216
+            
+            addNotes("B6q. E7i",T);
+            addNotes("E4i E4i E4i E4i",B);
+            addNotes("E6h+B6h",T,T);
+
+            thirdVoiceTime = trebleTime;
+            
+// Measure 217
+            
+            addNotes("C6q+E6q+A6q",T);
+            addRest("q",T);
+            addNotes("A4i A4i A4i A4i",B);
+            addNote("C7h",A,T,T);
+			  
+            thirdVoiceTime = trebleTime;
+            
+// Measure 218
+            
+            addNotes("C6q+E6q+A6q",T);
+            addRest("q",T);
+            addNotes("A4i A4i A4i A4i",B);
+            addNote("C7h",A,T,T);
+            
+// Measure 219
+            
+            addNotes("D7s C7s B6s C7s D7s C7s B6s C7s",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 220
+            
+            addNotes("F6h+A6h+D7h",T);
+            addNotes("D4i D4i D4i D4i",B);
+            
+// Measure 221
+            
+            addNotes("E6h+A6h+C7h",T);
+            addNotes("A4i A4i A4i A4i",B);
+            
+// Measure 222
+            
+            addNotes("E6i+G6i+B6i E6i+G6i+B6i E6i+G6i+B6i E6i+G6i+B6i",T);
+            addNotes("E4i E4i E4i E4i",B);
+            
+// Measure 223
+            
+            addNotes("A6q C7i. C7s",T);
+            addNotes("A4s E5s C5s E5s A4s E5s C5s E5s",B);
+            
+// Measure 224
+            
+            addNote("C7h",A,T);
+            addNotes("A4s E5s C5s E5s A4s E5s C5s E5s",B);
+            
+// Measure 225
+            
+            addNote("C7h",A,T);
+            addNotes("A4s E5s C5s E5s A4s E5s C5s E5s",B);
+            
+// Measure 226
+            
+            addNotes("D7s C7s B6s C7s D7s C7s B6s C7s",T);
+            addNotes("A4s E5s C5s E5s A4s E5s C5s E5s",B);
+            
+// Measure 227
+            
+            addNote("D7h",A,T);
+            addNotes("A4s F5s D5s F5s A4s F5s D5s F5s",B);
+            
+// Measure 228
+            
+            addNotes("C7i C7i C7i C7i",T);
+            addNotes("A4s E5s C5s E5s A4s E5s C5s E5s",B);
+            
+// Measure 229
+            
+            addNotes("B6q E7i",T);
+            addRest("q",T);
+            addNotes("E4s E5s G4s E5s E4s E5s G4s E5s",B);
+            
+            thirdVoiceTime = trebleTime;
+            
+// Measure 230
+            
+            addNotes("C6q+E6q+A6q",T);
+            addNotes("A4i A4i A4i A4i",B);
+            addNote("C7h",A,T,T);
+            
+
+
+            
+
 
 
 			System.out.println(trebleTime);
 			System.out.println(bassTime);
-			
-			
+            
+            
+
+            
+            
+            
+            
 			
 			
 			
