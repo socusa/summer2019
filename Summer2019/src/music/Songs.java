@@ -11,7 +11,7 @@ import static music.Util.*;
 
 public class Songs {
 	
-	public static void playJingleBells(CreatingMusic creatingMusic) {
+	public static void playJingle_Bells(CreatingMusic creatingMusic) {
 		try {
             Sequencer player = MidiSystem.getSequencer();
 			
@@ -168,13 +168,13 @@ public class Songs {
 			
 		}
 		
-	public static void playTheEntertainer(CreatingMusic creatingMusic) {
+	public static void playThe_Entertainer(CreatingMusic creatingMusic) {
 		try {
 	        Sequencer player = MidiSystem.getSequencer();
 				
 			player.open();
 				
-			player.setTempoInBPM(90);
+			player.setTempoInBPM(180);
 				
 			Sequence sequence = new Sequence(Sequence.PPQ,4);
 				
@@ -1356,13 +1356,13 @@ public class Songs {
 		}
 	}
 	
-	public static void playItsyBitsySpider(CreatingMusic creatingMusic) {
+	public static void playItsy_Bitsy_Spider(CreatingMusic creatingMusic) {
 		try {
 	        Sequencer player = MidiSystem.getSequencer();
 				
 			player.open();
 				
-			player.setTempoInBPM(90);
+			player.setTempoInBPM(180);
 				
 			Sequence sequence = new Sequence(Sequence.PPQ,4);
 				
@@ -1410,8 +1410,7 @@ public class Songs {
 		}
 	}
 	
-
-	public static void playRondoAllaTurca(CreatingMusic creatingMusic) {
+	public static void playRondo_Alla_Turca(CreatingMusic creatingMusic) {
 		try {
 	        Sequencer player = MidiSystem.getSequencer();
 				
@@ -2722,13 +2721,13 @@ public class Songs {
 		}
 	}
 
-	public static void playFurElise(CreatingMusic creatingMusic) {
+	public static void playFur_Elise(CreatingMusic creatingMusic) {
 		try {
 	        Sequencer player = MidiSystem.getSequencer();
 				
 			player.open();
 				
-			player.setTempoInBPM(60);
+			player.setTempoInBPM(120);
 				
 			Sequence sequence = new Sequence(Sequence.PPQ,4);
 				
@@ -2888,7 +2887,390 @@ public class Songs {
 			addRest("s",B);
 			addRest("i",B);
 			
+// Measure 21
+			
+			addNotes("C6i. E5s D6s C6s",T);
+			addNotes("A3s E4s A4s",B);
+			addRest("s",B);
+			addRest("i",B);
+			
+// Measure 22
+			
+			addNote("B5i",A,T);
+			addRest("s",T);
+			addNotes("E5s E6s",T);
+			addRest("s",T);
+			addNotes("E3s E4s E5s",B);
+			addRest("s",2,B);
+			addNote("E5s",A,B);
+			
+// Measure 23
+			
+			addRest("s",T);
+			addNotes("E6s E7s",T);
+			addRest("s",2,T);
+			addNote("D#6s",A,T);
+			addNote("E6s",A,B);
+			addRest("s",2,B);
+			addNotes("D#6s E6s",B);
+			addRest("s",B);
+			
+// Measure 24
+			
+			addNote("E6i",A,T);
+			addRest("s",T);
+			addNotes("D#6s E6s D6s",T);
+			addRest("s",B);
+			addNotes("D#6s E6s",B);
+			addRest("s",B);
+			addRest("i",B);
+			
+// Measure 25
+			
+			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
+			addRest("s",6,B);
+			
+// Measure 26
+			
+			addNote("A5i",A,T);
+			addRest("s",T);
+			addNotes("C5s E5s A5s",T);
+			addNotes("A3s E4s A4s",B);
+			addRest("s",B);
+			addRest("i",B);
+			
+// Measure 27
+			
+			addNote("B5i",A,T);
+			addRest("s",T);
+			addNotes("E5s G#5s B5s",T);
+			addNotes("E3s E4s G#4s",B);
+			addRest("s",B);
+			addRest("i",B);
+			
+// Measure 28
+			
+			addNote("C6i",A,T);
+			addRest("s",T);
+			addNotes("E5s E6s D#6s",T);
+			addNotes("A3s E4s A4s",B);
+			addRest("s",B);
+			addRest("i",B);
+			
+// Measure 29
+			
+			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
+			addRest("s",6,B);
+			
+// Measure 30
+			
+			addNote("A5i",A,T);
+			addRest("s",T);
+			addNotes("C5s E5s A5s",T);
+			addNotes("A3s E4s A4s",B);
+			addRest("s",B);
+			addRest("i",B);
+			
+// Measure 31
+			
+			addNote("B5i",A,T);
+			addRest("s",T);
+			addNotes("E5s C6s B5s",T);
+			addNotes("E3s E4s G#4s",B);
+			addRest("s",B);
+			addRest("i",B);
+			
+// Measure 32
+			
+			addNote("A5i",A,T);
+			addRest("s",T);
+			addNotes("B5s C6s D6s",T);
+			addNotes("A3s E4s A4s",B);
+			addRest("s",B);
+			addRest("i",B);
+			
+// Measure 33
+			
+			addNotes("E6i. G5s F6s E6s",T);
+			addNotes("C4s G4s C5s",B);
+			addRest("s",B);
+			addRest("i",B);
+
+// Measure 34
+						
+			addNotes("D6i. F5s E6s D6s",T);
+			addNotes("G3s G4s B4s",B);
+			addRest("s",B);
+			addRest("i",B);
+						
+// Measure 35
+						
+			addNotes("C6i. E5s D6s C6s",T);
+			addNotes("A3s E4s A4s",B);
+			addRest("s",B);
+			addRest("i",B);
+						
+// Measure 36
+						
+			addNote("B5i",A,T);
+			addRest("s",T);
+			addNotes("E5s E6s",T);
+			addRest("s",T);
+			addNotes("E3s E4s E5s",B);
+			addRest("s",2,B);
+			addNote("E5s",A,B);
+						
+// Measure 37
+						
+			addRest("s",T);
+			addNotes("E6s E7s",T);
+			addRest("s",2,T);
+			addNote("D#6s",A,T);
+			addNote("E6s",A,B);
+			addRest("s",2,B);
+			addNotes("D#6s E6s",B);
+			addRest("s",B);
+						
+// Measure 38
+						
+			addNote("E6i",A,T);
+			addRest("s",T);
+			addNotes("D#6s E6s D6s",T);
+			addRest("s",B);
+			addNotes("D#6s E6s",B);
+			addRest("s",B);
+			addRest("i",B);
+						
+// Measure 39
+						
+			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
+			addRest("s",6,B);
+						
+// Measure 40
+						
+			addNote("A5i",A,T);
+			addRest("s",T);
+			addNotes("C5s E5s A5s",T);
+			addNotes("A3s E4s A4s",B);
+			addRest("s",B);
+			addRest("i",B);
+						
+// Measure 41
+						
+			addNote("B5i",A,T);
+			addRest("s",T);
+			addNotes("E5s G#5s B5s",T);
+			addNotes("E3s E4s G#4s",B);
+			addRest("s",B);
+			addRest("i",B);
+						
+// Measure 42
+						
+			addNote("C6i",A,T);
+			addRest("s",T);
+			addNotes("E5s E6s D#6s",T);
+			addNotes("A3s E4s A4s",B);
+			addRest("s",B);
+			addRest("i",B);
+						
+// Measure 43
+						
+			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
+			addRest("s",6,B);
+						
+// Measure 44
+						
+			addNote("A5i",A,T);
+			addRest("s",T);
+			addNotes("C5s E5s A5s",T);
+			addNotes("A3s E4s A4s",B);
+			addRest("s",B);
+			addRest("i",B);
+						
+// Measure 45
+						
+			addNote("B5i",A,T);
+			addRest("s",T);
+			addNotes("E5s C6s B5s",T);
+			addNotes("E3s E4s G#4s",B);
+			addRest("s",B);
+			addRest("i",B);
+			
+// Measure 46
+			
+			addNote("A5i",A,T);
+			addRest("s",T);
+			addNotes("E5s+C6s F5s+C6s E5s+G5s+C6s",T);
+			addNotes("A3s E4s A4s Bb4s+C5s A4s+C5s G4s+B4s+C5s",B);
+			
+			
+			
+			player.setSequence(sequence);
+			
+			player.start();	
+		} catch (Exception e) {
+			e.printStackTrace();	
+		}
+	}		
 	
+	public static void playPineapple_Rag(CreatingMusic creatingMusic) {
+		try {
+	        Sequencer player = MidiSystem.getSequencer();
+				
+			player.open();
+				
+			player.setTempoInBPM(200);
+				
+			Sequence sequence = new Sequence(Sequence.PPQ,4);
+				
+			track = sequence.createTrack();
+			
+            key = "Bb";
+            
+// Measure 1
+            
+            addNotes("G5s F5i E5s D5s C#5s D5s Cn5s",T);
+            addNotes("G4s F4i E4s D4s C#4s D4s Cn4s",B);
+            
+// Measure 2
+            
+            addNotes("B4s C5s D5s",T);
+            tie(A,T,"F5s","F5q");
+            addNotes("B3s C4s D4s",B);
+            tie(A,B,"F4s","F4q");
+            
+// Measure 3
+            
+            addNotes("G5s G5i F#5s G5s A5s B5i",T);
+            addNotes("G4s G4i F#4s G4s A4s B4i",B);
+            
+// Measure 4
+            
+            addNote("C6i",A,T);
+            tie(A,T,"F5i","F5i");
+            addNote("F5i",A,T);
+            addNote("C5i",A,B);
+            tie(A,B,"F4i","F4i");
+            addNote("F4i",A,B);
+            
+// Measure 5
+            
+            addNotes("B5s+D6s+G6s F6i E6s D6s C#6s D6s Cn6s",T);
+            addNotes("B3i F4i+B4i+D5i F3i F4i+B4i+D5i",B);
+            
+// Measure 6
+            
+            addNotes("B5s C6s D6s",T);
+            tie(A,T,"F6s","F6s");
+            addNotes("B6s F6i+D7i",T);
+            addNotes("B3i F4i+B4i+D5i F3i F4i+B4i+D5i",B);
+            
+
+            
+            
+            
+            System.out.println(trebleTime);
+            System.out.println(bassTime);
+			
+
+			player.setSequence(sequence);
+			
+			player.start();	
+		} catch (Exception e) {
+			e.printStackTrace();	
+		}
+	}		
+	
+	public static void playRock_A_Bye_Baby(CreatingMusic creatingMusic) {
+		try {
+	        Sequencer player = MidiSystem.getSequencer();
+				
+			player.open();
+				
+			player.setTempoInBPM(200);
+				
+			Sequence sequence = new Sequence(Sequence.PPQ,4);
+				
+			track = sequence.createTrack();
+			
+			key = "F";
+			
+// Measure 1
+			
+			addRest("q",2,T);
+			addNote("A5q",A,T);
+			addNotes("A4q C5q",B);
+			addRest("q",B);
+			
+// Measure 2
+			
+			addNotes("G5h F5q",T);
+			addRest("h",B);
+			addRest("q",B);
+			
+// Measure 3
+			
+			addRest("q",2,T);
+			addNote("F5q",A,T);
+			addNotes("A4q C5q",B);
+			addRest("q",B);
+			
+// Measure 4
+			
+			addNote("E5h.",A,T);
+			addNote("C5h.",A,B);
+			
+// Measure 5
+			
+			addRest("q",2,T);
+			addNote("B5q",A,T);
+			addNotes("B4q D5q",B);
+			addRest("q",B);
+			
+// Measure 6
+			
+			addNotes("A5h G5q",T);
+			addRest("h",B);
+			addRest("q",B);
+			
+// Measure 7
+			
+			addNotes("G5q F5q",T);
+			addRest("q",T);
+			addRest("q",2,B);
+			addNote("D5q",A,B);
+			
+// Measure 8
+			
+			addRest("h",T);
+			addRest("q",T);
+			addNote("C5h.",A,B);
+			
+// Measure 9
+			
+			addRest("q",2,T);
+			addNote("A5q",A,T);
+			addNotes("A4q C5q",B);
+			addRest("q",B);
+			
+// Measure 10
+			
+			addNotes("G5h F5q",T);
+			addRest("h",B);
+			addRest("q",B);
+			
+// Measure 11
+			
+			addRest("q",2,T);
+			addNote("F5q",A,T);
+			addNotes("A4q C5q",B);
+			addRest("q",B);
+			
+			
+			
+			System.out.println(trebleTime);
+			System.out.println(bassTime);
+
 			player.setSequence(sequence);
 			
 			player.start();	

@@ -2,12 +2,14 @@ package music;
 
 import static music.CreatingMusic.track;
 
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -46,13 +48,22 @@ public class CreatingMusic extends JFrame implements ActionListener {
 		
 		add(songs = new JComboBox<String>());
 		
+		songs.setPreferredSize(new Dimension(250,50));
+		
 		songs.setFont(new Font("Comic Sans MS",Font.BOLD,20));
 		
 	    Method[] methods = Songs.class.getDeclaredMethods();
-	
-	    for (Method method : methods)
-	    	songs.addItem(method.getName());	    
 	    
+	    String[] songs1 = new String[methods.length];
+	
+	    for (int counter=0;counter<songs1.length;counter++)
+	    	songs1[counter] = methods[counter].getName().substring(4).replaceAll("_", " ");	    
+	    
+	    Arrays.sort(songs1);
+
+	    for (int counter=0;counter<songs1.length;counter++)
+	    	songs.addItem(songs1[counter]);
+	    	    
 	    add(play = new JButton("Play"));
 	    
 	    play.setFont(new Font("Comic Sans MS",Font.BOLD,20));
@@ -120,11 +131,11 @@ public class CreatingMusic extends JFrame implements ActionListener {
 		// TODO Auto-generated method stub
 		
 		String item = songs.getSelectedItem().toString();
-		
+
 		Method[] methods = Songs.class.getDeclaredMethods();
 		
 		for (int counter=0;counter<methods.length;counter++) {
-			if (methods[counter].getName().equalsIgnoreCase(item))
+			if ((methods[counter].getName().substring(4).replaceAll("_", " ")).equalsIgnoreCase(item))
 				try {
 					methods[counter].invoke(null,this);
 				} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e1) {
