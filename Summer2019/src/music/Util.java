@@ -46,6 +46,8 @@ public class Util {
 		map.put("An", 69);
 		map.put("Bn", 71);
 		
+		System.out.println("key is " + key);
+		
 		switch (key.toUpperCase()) {
 		
 		case "C#" : map.put("B",72);
@@ -58,18 +60,18 @@ public class Util {
 		
 		            break;
 		            
-		case "Cb" : map.put("F",64);
-		case "Gb" : map.put("C",59);
-		case "Db" : map.put("G",66);
-		case "Ab" : map.put("D",61);
-		case "Eb" : map.put("A",68);
-		case "Bb" : map.put("E",63);
+		case "CB" : map.put("F",64);
+		case "GB" : map.put("C",59);
+		case "DB" : map.put("G",66);
+		case "AB" : map.put("D",61);
+		case "EB" : map.put("A",68);
+		case "BB" : map.put("E",63);
 		case "F"  : map.put("B",70);
 		
 		            break;
 		}
 		
-	//	System.out.println(map);
+	System.out.println(map);
 		
 		return(map.get(noteName) + (octave - 5)*12);
 	}
@@ -297,6 +299,26 @@ public class Util {
 				addNote(tokens1[tokens1.length-1],true,treble,third);
 			}			
 		}
+	}
+	
+	public static void addNotesInTimeOf(String notes,
+			                            int numberOfNotes,
+			                            int timeOf,
+			                            boolean treble) {
+		String[] tokens = notes.split(" ");
+		
+		int duration = 0;
+		
+		for (int counter=0;counter<tokens.length;counter++) {
+           String[] tokens1 = tokens[counter].split("\\d");			
+           
+           duration = Integer.parseInt(tokens1[tokens1.length-1]); 			
+		}
+		
+		int fullDuration = timeOf*duration;
+		
+		duration = fullDuration/numberOfNotes;
+		
 	}
 	
 
