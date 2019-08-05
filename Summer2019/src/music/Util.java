@@ -1,5 +1,6 @@
 package music;
 
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -321,54 +322,70 @@ public class Util {
 		
 	}
 	
-
 	public static void tie(boolean advance,
 			               boolean treble,
 			               String... notes) {
-		String[] noteNames = new String[notes.length];
-		String[] durations = new String[notes.length];
-		int[] octaves = new int[notes.length];
+		int numberOfNotes = notes[0].split("\\+").length;
 		
-		int duration = 0;
+		java.util.List<ArrayList<String>> list = new ArrayList<>();
 		
-		for (int counter=0;counter<notes.length;counter++) {
-		   String[] tokens = notes[counter].split("\\d");
-
-	       noteNames[counter] = tokens[0];
-	       durations[counter] = tokens[1];
-	       
-	       duration += lengthOfDuration(durations[counter]);
-	       
-	       octaves[counter] = Integer.parseInt(notes[counter].substring(noteNames[counter].length(),noteNames[counter].length()+1));
+		for (int counter=0;counter<numberOfNotes;counter++) {
+			list.add(new ArrayList<String>());
 		}
 		
-	    String error = "";
+		for (int counter=0;counter<notes.length;counter++) {
+			String[] tokens = notes[counter].split("\\+");
+			
+			for (int counter1=0;counter1<tokens.length;counter1++)
+				list.get(counter1).add(tokens[counter1]);
+		}
+		
+		for (int counter=0;counter<list.size();counter++) {		
+   		    String[] noteNames = new String[notes.length];
+		    String[] durations = new String[notes.length];
+		    int[] octaves = new int[notes.length];
+		
+		    int duration = 0;
+		
+		    for (int counter1=0;counter1<list.get(counter).size();counter1++) {
+		        String[] tokens = list.get(counter).get(counter1).split("\\d");
+
+  	            noteNames[counter1] = tokens[0];
+	            durations[counter1] = tokens[1];
+	       
+	            duration += lengthOfDuration(durations[counter1]);
+	       
+	            octaves[counter1] = Integer.parseInt(notes[counter1].substring(noteNames[counter1].length(),noteNames[counter1].length()+1));
+		    }
+		
+	        String error = "";
 	    
-	    boolean noteNamesNotTheSame = false;
+	        boolean noteNamesNotTheSame = false;
 	    
-	    for (int counter=1;counter<notes.length;counter++)
-	    	noteNamesNotTheSame &= (noteNames[0].equals(noteNames[counter]));
+	        for (int counter1=1;counter1<notes.length;counter++)
+	    	    noteNamesNotTheSame &= (noteNames[0].equals(noteNames[counter1]));
 	    
-        boolean octavesNotTheSame = false;
+            boolean octavesNotTheSame = false;
 	    
-	    for (int counter=1;counter<notes.length;counter++)
-	    	octavesNotTheSame &= (octaves[0] == octaves[counter]);
+	        for (int counter1=1;counter1<notes.length;counter1++)
+	            octavesNotTheSame &= (octaves[0] == octaves[counter1]);
 	    
-	    if (noteNamesNotTheSame)
-	    	error += "The note names are not the same\n";
+	        if (noteNamesNotTheSame)
+	    	    error += "The note names are not the same\n";
 	    
-	    if (octavesNotTheSame)
-	    	error += "The octaves are not the same";
+	        if (octavesNotTheSame)
+	    	    error += "The octaves are not the same";
 	    
-	    if (!error.equals(""))
-	    	JOptionPane.showMessageDialog(null, error);
-	    else {
-	    	addNote(noteNames[0],
-	    			duration,
-	    			octaves[0],
-	    			advance,
-	    			treble);	    	
-	    }
+	        if (!error.equals(""))
+	    	    JOptionPane.showMessageDialog(null, error);
+	        else {
+	    	    addNote(noteNames[0],
+	    		    	duration,
+	    			    octaves[0],
+	    			    counter < list.get(counter).size()-1,
+	    			    treble);	    	
+	        }
+		}
 	}
 
 	public static void tie(boolean advance,
