@@ -3691,7 +3691,7 @@ public class Songs {
 // Measure 7
             
             addNotes("B5s+G6s C6s+A6s B5s+G6s",T);
-            tie(A,T,"A5i+F6i","")
+            
             
 
             
