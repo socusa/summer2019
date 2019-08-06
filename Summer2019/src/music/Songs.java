@@ -3520,12 +3520,109 @@ public class Songs {
             addNotes("B6s F6i+D7i",T);
             addNotes("B3i F4i+B4i+D5i F3i F4i+B4i+D5i",B);
             
+// Measure 7
+            
+            addNotes("B5s+D6s+G6s F6i E6s D6s C#6s D6s E6s",T);
+            addNotes("B3i F4i+B4i+D5i F3i F4i+B4i+D5i",B);
+            
+// Measure 8
+            
+            addNotes("B5i+D6i+F6i B5s+F6s D6s B5s+F6s D6s B5i+F6i",T);
+            addNotes("B3i D4i F4i Ab4i",B);
+            
+// Measure 9
+            
+            addNotes("B5s E6i+B6i B5s E6i+B6i B5s",T);
+            addNotes("G3i+G4i G4i+B4i+E5i Gb3i+Gb4i G4i+B4i+E5i",B);
+            
+            thirdVoiceTime = trebleTime;
+
+// Measure 10
+            
+            tie(D,T,"F6s","F6s");
+            tie(A,T,"B6s","B6s");
+            addNotes("D7s B6s D6s F6s En6s F6s G6s",T);
+            addNotes("F3i+F4i F4i+B4i+D5i D3i+D4i Db3i+Db4i",B);
+            
+            addRest("s",4,T,T);
+            addNote("B5q",A,T,T);
+            
+// Measure 11
+            
+            addNotes("A6s C6i+F6i A6s B5i+En6i+G6i B5s+E6s+A6s",T);
+            addNotes("C3i+C4i A4i+C5i+F5i C3i+C4i A4i+C5i+En5i",B);
+
+            
+// Measure 12
+            
+            tie(D,T,"A5s","A5i");
+            tie(A,T,"F6s","F6i");
+            addNotes("A5s B5s C6s D6s E6s F6s",T);
+            addNotes("F3i+F4i C4i A3i F3i",B);
+            
+// Measure 13
+            
+            addNotes("B5s+D6s+G6s F6i E6s D6s C#6s D6s Cn6s",T);
+            addNotes("B3i F4i+B4i+D5i F3i F4i+B4i+D5i",B);
+            
+// Measure 14
+            
+            addNotes("B5s C6s D6s",T);
+            tie(A,T,"F6s","F6s");
+            addNotes("B6s F6i+D7i",T);
+            addNotes("B3i F4i+B4i+D5i F3i F4i+B4i+D5i",B);
+            
+// Measure 15
+            
+            addNotes("B5s+D6s+G6s F6i E6s D6s C#6s D6s E6s",T);
+            addNotes("B3i F4i+B4i+D5i F3i F4i+B4i+D5i",B);
+
+            
+// Measure 16
+            
+            addNotes("B5i+D6i+F6i B5s+F6s D6s B5s+F6s D6s B5i+F6i",T);
+            addNotes("B3i D4i F4i Ab4i",B);
+
+// Measure 17
+            
+            addNotes("B5s E6i+B6i B5s E6i+B6i B5s",T);
+            addNotes("G3i+G4i G4i+B4i+E5i Gb3i+Gb4i Gb4i+B4i+E5i",B);
+
+            
+// Measure 18
+            
+            tie(D,T,"E6s","E6s");
+            tie(A,T,"B6s","B6s");
+            addNotes("D7s B6s F6s D6s F6s G6s B6s",T);
+            addNotes("F3i+F4i F4i+B4i+D5i F3i+F4i F4i+B4i+D5i",B);
+            
+            thirdVoiceTime = trebleTime;
+            
+// Measure 19
+            
+            addNotes("En5i Bb5i E5i.+A5i.",T);
+            addNotes("G3i+G4i Gb3i+Gb4i F3q+F4q",B);
+            
+            addNotes("B5q C6s D6i",T,T);
+            addRest("s",T,T);
+            
+// Measure 20
+            
+            tie(D,T,"D5s","D5i");
+            tie(A,T,"B5s","B5i");
+            addNotes("B5s C6s D6s E6s A5i+E6i+F6i",T);
+            addNotes("B3i+B4i",B);
+            addRest("i",2,B);
+            addNotes("F3i+F4i",B);
+            
+
+
+            System.out.println(trebleTime);
+            System.out.println(bassTime); 
 
             
             
             
-            System.out.println(trebleTime);
-            System.out.println(bassTime);
 			
 
 			player.setSequence(sequence);
@@ -3677,15 +3774,17 @@ public class Songs {
             
 // Measure 5
             
-            addNotes("G6s+B5s A6s+C6s G6s+A5s",A,T);
-            tie(A,T,"F6i+A5i","F6h.+A5h.");
+            addNotes("G6s+B5s A6s+C6s G6s+A5s",T);
+            tie(D,T,"F6i","F6h.");
+            tie(A,T,"A5i","A5h.");
             addRest("q",B);
             addNotes("F4i F3i C4i F4i A4i F4i",B);
             
 // Measure 6
             
             addNotes("B5s+D6s C6s+E6s B5s+D6s",T);
-            tie(A,T,"C6i+A5i","C6h.+A5h.");
+            tie(D,T,"C6i","C6h.");
+            tie(A,T,"A5i","A5h.");
             addNotes("F3i C4i F4i A4i C5i G4i C5i F5i",B);
 
 // Measure 7

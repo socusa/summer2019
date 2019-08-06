@@ -47,7 +47,7 @@ public class Util {
 		map.put("An", 69);
 		map.put("Bn", 71);
 		
-		System.out.println("key is " + key);
+	//	System.out.println("key is " + key);
 		
 		switch (key.toUpperCase()) {
 		
@@ -72,7 +72,7 @@ public class Util {
 		            break;
 		}
 		
-	System.out.println(map);
+//	System.out.println(map);
 		
 		return(map.get(noteName) + (octave - 5)*12);
 	}
