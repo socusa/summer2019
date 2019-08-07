@@ -90,20 +90,27 @@ public class Util {
 		
 		*/
 		
-		map.put("t", 1);
-		map.put("s", 2);
-		map.put("i", 4);
-		map.put("q", 8);
-		map.put("h", 16);
-		map.put("w", 32);
+		map.put("t", 1*factor);
+		map.put("s", 2*factor);
+		map.put("i", 4*factor);
+		map.put("q", 8*factor);
+		map.put("h", 16*factor);
+		map.put("w", 32*factor);
+		
+		int output = 0;
 		
 		if (!duration.endsWith("."))		
-		   return(map.get(duration));
+		   output = map.get(duration);
 		else {
 			int temp = map.get(duration.substring(0,1));
 			
-			return(temp + temp/2);
+			output = temp + temp/2;
 		}
+		
+		if (tripletFactor == 2)
+			output = output*2/3;
+		
+		return(output);
 	}
 	
 	public static void addNote(String note,

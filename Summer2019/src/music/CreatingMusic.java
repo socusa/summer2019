@@ -1,5 +1,6 @@
 package music;
 
+import static music.CreatingMusic.player;
 import static music.CreatingMusic.track;
 
 import java.awt.Dimension;
@@ -40,6 +41,18 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	public static String key = "C";
 	public static JComboBox<String> songs;
 	public static JButton play;
+	public static int factor = 1;
+	public static int tripletFactor = 1;
+	public static Sequencer player;
+	
+	static {
+		try {
+		   player = MidiSystem.getSequencer();
+		   
+		} catch (Exception e) {
+		   System.out.println(e);
+		}
+	}
 	
 	public CreatingMusic(String title) {
 		super(title);
@@ -130,18 +143,22 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
-		String item = songs.getSelectedItem().toString();
+		if (player.isOpen())
+		   JOptionPane.showMessageDialog(null, "You need to exit and restart to play another");
+		else {		
+		   String item = songs.getSelectedItem().toString();
 
-		Method[] methods = Songs.class.getDeclaredMethods();
+		   Method[] methods = Songs.class.getDeclaredMethods();
 		
-		for (int counter=0;counter<methods.length;counter++) {
-			if ((methods[counter].getName().substring(4).replaceAll("_", " ")).equalsIgnoreCase(item))
-				try {
+		   for (int counter=0;counter<methods.length;counter++) {
+		      if ((methods[counter].getName().substring(4).replaceAll("_", " ")).equalsIgnoreCase(item))
+			     try {
 					methods[counter].invoke(null,this);
-				} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e1) {
+				 } catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
-				}
+				 }
+		   }
 		}
 	}
 }

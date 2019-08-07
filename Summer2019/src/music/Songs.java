@@ -12,156 +12,190 @@ import static music.Util.*;
 public class Songs {
 	
 	public static void playJingle_Bells(CreatingMusic creatingMusic) {
-		try {
-            Sequencer player = MidiSystem.getSequencer();
+		try {			
+            player = MidiSystem.getSequencer();
 			
-			player.open();
+ 		    player.open();
 			
-			player.setTempoInBPM(160);
+			player.setTempoInBPM(320);
+			
+			System.out.println("I'm here");
 			
 			Sequence sequence = new Sequence(Sequence.PPQ,4);
 			
 			track = sequence.createTrack();
 			
-			addNotes("G4q E5q D5q C5q",T);
+// Measure 1
 			
-			addNotes("C3h G3h",B);
-
-			addNotes("G4h. G4i G4i",T);
-
-			addNotes("C3h G3h",B);
-
 			addNotes("G4q E5q D5q C5q",T);
-
 			addNotes("C3h G3h",B);
+
+// Measure 2
+			
+			addNotes("G4h. G4i G4i",T);
+			addNotes("C3h G3h",B);
+
+// Measure 3
+			
+			addNotes("G4q E5q D5q C5q",T);
+			addNotes("C3h G3h",B);
+			
+// Measure 4
 
 			addNotes("A4h.",T);
 			addRest("q",T);
-
-			addNotes("F3h C4h",B);
+            addNotes("F3h C4h",B);
+            
+// Measure 5
 
 			addNotes("A4q F5q E5q D5q",T);
-
 			addNotes("F3h C4h",B);
+			
+// Measure 6
 
 			addNote("B4h.",A,T);
 			addRest("q",T);
-
 			addNotes("G3h D4h",B);
+			
+// Measure 7
 
 			addNotes("G5q G5q F5q D5q",T);
-
 			addNotes("G3h B3h",B);
+			
+// Measure 8
 			
 			addNote("E5h.",A,T);
 			addRest("q",T);
-
 			addNotes("C4h E4h",B);
+			
+// Measure 9
 
 			addNotes("G4q E5q D5q C5q",T);
-
 			addNotes("C3h G3h",B);
+			
+// Measure 10
 
 			addNote("G4h.",A,T);
 			addRest("q",T);
-
 			addNotes("C3h G3h",B);
+			
+// Measure 11
 			
 			addNotes("G4q E5q D5q C5q",T);
-
 			addNotes("C3h G3h",B);
+			
+// Measure 12
 
 			addNotes("A4h. A4q",T);
-
 			addNotes("F3h C4h",B);
+			
+// Measure 13
 
 			addNotes("A4q F5q E5q D5q",T);
-
 			addNotes("F3h C4h",B);
+			
+// Measure 14
 
 			addNotes("G5q G5q G5q G5q",T);
-
 			addNotes("F3h C4h",B);
+			
+// Measure 15
 
 			addNotes("A5q G5q F5q D5q",T);
-
 			addNotes("G3h B3h",B);
+			
+// Measure 16
 
-			addNotes("C5h B4h G5h",T);
+			addNotes("C5h B4h+G5h",T);
+			addNotes("C4h G3h+D4h",B);
+			
+// Measure 17
 
-			addNotes("C4h G3h D4h",B);
-
-			addNotes("C5q E5q C5q E5q C5h E5h",T);
-
+			addNotes("C5q+E5q C5q+E5q C5h+E5h",T);
 			addNotes("C4h B3h",B);
+			
+// Measure 18
 
-			addNotes("C5q E5q C5q E5q C5h E5h",T);
-
+			addNotes("C5q+E5q C5q+E5q C5h+E5h",T);
 			addNotes("A3h G4h",B);
+			
+// Measure 19
 
 			addNotes("E5q G5q C5q. D5i",T);
-
-			addNotes("C4h G3h",B);
-
-			addNotes("C5h. E5h.",T);
-			addRest("q",T);
-
 			addNotes("C4h G3h",B);
 			
-			addNotes("F5q F5q F5q. F5i",T);
+// Measure 20
 
+			addNotes("C5h.+E5h.",T);
+			addRest("q",T);
+			addNotes("C4h G3h",B);
+			
+// Measure 21
+			
+			addNotes("F5q F5q F5q. F5i",T);
 			addNotes("F3h A4h",B);
 			
+// Measure 22
+			
 			addNotes("F5q E5q E5q E5i E5i",T);
-
 			addNotes("C3h G3h",B);
+			
+// Measure 23
 
 			addNotes("E5q D5q D5q E5q",T);
-			
 			addNotes("D3h F#3h",B);
-
-			addNotes("D5h B4h G5h",T);
-
-			addNotes("G3h G3h",B);
-
-			addNotes("C5q E5q C5q E5q C5h E5h",T);
-
-			addNotes("C4h B3h",B);
-
-			addNotes("C5q E5q C5q E5q C5h E5h",T);
 			
+// Measure 24
+
+			addNotes("D5h B4h+G5h",T);
+			addNotes("G3h G3h",B);
+			
+// Measure 25
+
+			addNotes("C5q+E5q C5q+E5q C5h+E5h",T);
+			addNotes("C4h B3h",B);
+			
+// Measure 26
+
+			addNotes("C5q+E5q C5q+E5q C5h+E5h",T);
 			addNotes("A3h G3h",B);
+			
+// Measure 27
 
 			addNotes("E5q G5q C5q. D5i",T);
-
-			addNotes("C4h G3h",B);
-
-			addNotes("C5h. E5h.",T);
-			addRest("q",T);
-
 			addNotes("C4h G3h",B);
 			
-			addNotes("F5q F5q F5q. F5i",T);
+// Measure 28
 
+			addNotes("C5h.+E5h.",T);
+			addRest("q",T);
+			addNotes("C4h G3h",B);
+			
+// Measure 29
+			
+			addNotes("F5q F5q F5q. F5i",T);
 			addNotes("F3h A3h",B);
+			
+// Measure 30
 
 			addNotes("F5q E5q E5q E5i E5i",T);
-
 			addNotes("C3h G3h",B);
+			
+// Measure 31
 
 			addNotes("G5q G5q F5q D5q",T);
-
 			addNotes("G3h B3h",B);
+			
+// Measure 32
 
 			addNote("C5w",A,T);
-
-			addNotes("C4w E4w",B);
+			addNotes("C4w+E4w",B);
 			
 			player.setSequence(sequence);
 			
 			player.start();
 			
-			
+			System.out.println(player.isRunning());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -170,7 +204,7 @@ public class Songs {
 		
 	public static void playThe_Entertainer(CreatingMusic creatingMusic) {
 		try {
-	        Sequencer player = MidiSystem.getSequencer();
+	        player = MidiSystem.getSequencer();
 				
 			player.open();
 				
@@ -1358,7 +1392,7 @@ public class Songs {
 	
 	public static void playItsy_Bitsy_Spider(CreatingMusic creatingMusic) {
 		try {
-	        Sequencer player = MidiSystem.getSequencer();
+	        player = MidiSystem.getSequencer();
 				
 			player.open();
 				
@@ -1412,7 +1446,7 @@ public class Songs {
 	
 	public static void playRondo_Alla_Turca(CreatingMusic creatingMusic) {
 		try {
-	        Sequencer player = MidiSystem.getSequencer();
+	        player = MidiSystem.getSequencer();
 				
 			player.open();
 				
@@ -2723,7 +2757,7 @@ public class Songs {
 
 	public static void playFur_Elise(CreatingMusic creatingMusic) {
 		try {
-	        Sequencer player = MidiSystem.getSequencer();
+	        player = MidiSystem.getSequencer();
 				
 			player.open();
 				
@@ -3179,7 +3213,7 @@ public class Songs {
 // Measure 60
 			
 			addNotes("E6i B5s E6s D#6s",T);
-			addNotes("i",B);
+			addRest("i",B);
 			addRest("s",4,B);
 			
 // Measure 61
@@ -3470,7 +3504,7 @@ public class Songs {
 	
 	public static void playPineapple_Rag(CreatingMusic creatingMusic) {
 		try {
-	        Sequencer player = MidiSystem.getSequencer();
+	        player = MidiSystem.getSequencer();
 				
 			player.open();
 				
@@ -3635,7 +3669,7 @@ public class Songs {
 	
 	public static void playRock_A_Bye_Baby(CreatingMusic creatingMusic) {
 		try {
-	        Sequencer player = MidiSystem.getSequencer();
+	        player = MidiSystem.getSequencer();
 				
 			player.open();
 				
@@ -3733,17 +3767,19 @@ public class Songs {
 	
 	public static void playTest(CreatingMusic creatingMusic) {
 		try {
-	        Sequencer player = MidiSystem.getSequencer();
+	        player = MidiSystem.getSequencer();
 				
 			player.open();
 				
-			player.setTempoInBPM(140);
+			player.setTempoInBPM(140*300);
 				
 			Sequence sequence = new Sequence(Sequence.PPQ,4);
 				
 			track = sequence.createTrack();
 			
             key = "Bb";
+            
+            factor = 300;
             
 // Measure 1
             
@@ -3774,7 +3810,12 @@ public class Songs {
             
 // Measure 5
             
+            tripletFactor = 2;
+            
             addNotes("G6s+B5s A6s+C6s G6s+A5s",T);
+            
+            tripletFactor = 1;
+            
             tie(D,T,"F6i","F6h.");
             tie(A,T,"A5i","A5h.");
             addRest("q",B);
@@ -3782,7 +3823,12 @@ public class Songs {
             
 // Measure 6
             
+            tripletFactor = 2;
+            
             addNotes("B5s+D6s C6s+E6s B5s+D6s",T);
+            
+            tripletFactor = 1;
+            
             tie(D,T,"C6i","C6h.");
             tie(A,T,"A5i","A5h.");
             addNotes("F3i C4i F4i A4i C5i G4i C5i F5i",B);
@@ -3800,6 +3846,110 @@ public class Songs {
             System.out.println(bassTime);
 			
 
+			player.setSequence(sequence);
+			
+			player.start();	
+		} catch (Exception e) {
+			e.printStackTrace();	
+		}
+	}		
+	
+	public static void playOde_To_Joy(CreatingMusic creatingMusic) {
+		try {
+	        player = MidiSystem.getSequencer();
+				
+			player.open();
+				
+			player.setTempoInBPM(240);
+				
+			Sequence sequence = new Sequence(Sequence.PPQ,4);
+				
+			track = sequence.createTrack();
+			
+// Measure 1
+			
+			addNotes("E5q E5q F5q G5q",T);
+			addNote("C4w",A,B);
+			
+// Measure 2
+			
+			addNotes("G5q F5q E5q D5q",T);
+			addNote("G4w",A,B);
+			
+// Measure 3
+			
+			addNotes("C5q C5q D5q E5q",T);
+			addNote("E4w",A,B);
+			
+// Measure 4
+			
+			addNotes("E5q. D5i D5h",T);
+			addNote("G4w",A,B);
+			
+// Measure 5
+			
+			addNotes("E5q E5q F5q G5q",T);
+			addNote("C4w",A,B);
+			
+// Measure 6
+			
+			addNotes("G5q F5q E5q D5q",T);
+			addNote("G4w",A,B);
+			
+// Measure 7
+			
+			addNotes("C5q C5q D5q E5q",T);
+			addNote("E4w",A,B);
+			
+// Measure 8
+			
+			addNotes("D5q. C5i C5h",T);
+			addNotes("F4h+G4h E4h+G4h",B);
+			
+// Measure 9
+			
+			addNotes("D5q D5q E5q C5q",T);
+			addNote("G4w",A,B);
+			
+// Measure 10
+			
+			addNotes("D5q E5i F5i E5q C5q",T);
+			addNote("G4w",A,B);
+			
+// Measure 11
+			
+			addNotes("D5q E5i F5i E5q D5q",T);
+			addNotes("G4h G#4h",B);
+			
+// Measure 12
+			
+			addNotes("C5q D5q",T);
+			addRest("h",T);
+			addNotes("A4h G4h",B);
+			
+// Measure 13
+			
+			addNotes("E5q E5q F5q G5q",T);
+			addNote("C4w",A,B);
+			
+// Measure 14
+			
+			addNotes("G5q F5q E5q D5q",T);
+			addNote("G4w",A,B);
+			
+// Measure 15
+			
+			addNotes("C5q C5q D5q E5q",T);
+			addNote("E4w",A,B);
+			
+// Measure 16
+			
+			addNotes("D5q. C5i C5h",T);
+			addNotes("F4h+G4h E4h+G4h",B);
+
+            System.out.println(trebleTime);
+            System.out.println(bassTime);
+			
 			player.setSequence(sequence);
 			
 			player.start();	
