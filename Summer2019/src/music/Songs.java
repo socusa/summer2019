@@ -6,6 +6,7 @@ import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Sequence;
 import javax.sound.midi.Sequencer;
 import javax.sound.midi.Track;
+import javax.sound.midi.Transmitter;
 
 import static music.Util.*;
 
@@ -3833,17 +3834,52 @@ public class Songs {
             tie(A,T,"A5i","A5h.");
             addNotes("F3i C4i F4i A4i C5i G4i C5i F5i",B);
 
+            thirdVoiceTime = trebleTime;
+            
 // Measure 7
+            
+            tripletFactor = 2;
             
             addNotes("B5s+G6s C6s+A6s B5s+G6s",T);
             
+            tripletFactor = 1;
             
+            tie(A,T,"F6i","F6q");
+            
+            tripletFactor = 2;
+            
+            addNotes("D6s+F6s E6s+G6s D6s+F6s",T);
+            
+            tripletFactor = 1;
+            
+            tie(D,T,"C6i","C6q");
+            tie(A,T,"E6i","E6q");
+            addRest("s",2,T,T);
+            tie(A,T,T,"A5i","A5h.");
+            addRest("q",B);
+            addNote("F4i",A,B);
+            tie(A,B,"F3i","F3q");
+            addNote("F4i",A,B);
+            
+// Measure 8
+            
+            tripletFactor = 2;
+            
+            addNotes("B5s+D6s C6s+E6s B5s+D6s",T);
+            
+            tripletFactor = 1;
+            
+            tie(D,T,"A5i","A5h.");
+            tie(A,T,"C6i","C6h.");
+            tie(A,B,"F3i","F3q");
+            addNotes("F4i F3i C4i F4i A4i F4i",B);
+                      
 
-            
-            
-            
             System.out.println(trebleTime);
-            System.out.println(bassTime);
+            System.out.println(bassTime); 
+            
+            
+            
 			
 
 			player.setSequence(sequence);
@@ -3958,5 +3994,160 @@ public class Songs {
 		}
 	}		
 	
+	public static void playTwinkle_Twinkle_Little_Star(CreatingMusic creatingMusic) {
+		try {
+	        player = MidiSystem.getSequencer();
+
+			int[] controllersOfInterest = new int[128];
+			
+			for (int counter=0;counter<controllersOfInterest.length;counter++)
+				controllersOfInterest[counter] = counter;
+			   
+			player.addControllerEventListener(new MyControllerEventListener(), controllersOfInterest);
+			
+			player.addMetaEventListener(new MyMetaEventListener());
+			   
+			Transmitter transmitter = player.getTransmitter();
+			
+			transmitter.setReceiver(new MyReceiver());
+			
+			player.open();
+				
+			player.setTempoInBPM(240);
+				
+			Sequence sequence = new Sequence(Sequence.PPQ,4);
+				
+			track = sequence.createTrack();
+			
+// Measure 1
+			
+			addNotes("C5q C5q",T);
+			addNote("C4h",A,B);
+			
+// Measure 2
+			
+			addNotes("G5q G5q",T);
+			addNote("E4h",A,B);
+			
+// Measure 3
+			
+			addNotes("A5q A5q",T);
+			addNote("F4h",A,B);
+			
+// Measure 4
+			
+			addNote("G5h",A,T);
+			addNote("E4h",A,B);
+			
+// Measure 5
+			
+			addNotes("F5q F5q",T);
+			addNote("D4h",A,B);
+			
+// Measure 6
+			
+			addNotes("E5q E5q",T);
+			addNote("C4h",A,B);
+			
+// Measure 7
+			
+			addNotes("D5q D5q",T);
+			addNotes("F4q G4q",B);
+			
+// Measure 8
+			
+			addNote("C5h",A,T);
+			addNote("E4h",A,B);
+			
+// Measure 9
+			
+			addNotes("G5q G5q",T);
+			addNote("E4h",A,B);
+			
+// Measure 10
+			
+			addNotes("F5q F5q",T);
+			addNote("D4h",A,B);
+			
+// Measure 11
+			
+			addNotes("E5q E5q",T);
+			addNote("C4h",A,B);
+			
+// Measure 12
+			
+			addNote("D5h",A,T);
+			addNotes("B3q G4q",B);
+			
+// Measure 13
+			
+			addNotes("G5q G5q",T);
+			addNote("E4h",A,B);
+			
+// Measure 14
+			
+			addNotes("F5q F5q",T);
+			addNote("F4h",A,B);
+			
+// Measure 15
+			
+			addNotes("E5q E5i F5i",T);
+			addNote("C4h",A,B);
+			
+// Measure 16
+			
+			addNotes("E5q D5q",T);
+			addNotes("C4q B3q",B);
+			
+// Measure 17
+			
+			addNotes("C5q C5q",T);
+			addNote("C4h",A,B);
+			
+// Measure 18
+			
+			addNotes("G5q G5q",T);
+			addNote("E4h",A,B);
+			
+// Measure 19
+			
+			addNotes("A5q A5q",T);
+			addNote("F4h",A,B);
+			
+// Measure 20
+			
+			addNote("G5h",A,T);
+			addNote("E4h",A,B);
+			
+// Measure 21
+			
+			addNotes("F5q F5q",T);
+			addNote("D4h",A,B);
+			
+// Measure 22
+			
+			addNotes("E5q E5q",T);
+			addNote("C4h",A,B);
+			
+// Measure 23
+			
+			addNotes("D5q D5i E5i",T);
+			addNotes("F4q G4q",B);
+			
+// Measure 24
+			
+			addNote("C5h",A,T);
+			addNote("C4h",A,B);
+			
+			System.out.println(trebleTime);
+			System.out.println(bassTime);
+
+			player.setSequence(sequence);
+			
+			player.start();	
+		} catch (Exception e) {
+			e.printStackTrace();	
+		}
+	}		
 }
 

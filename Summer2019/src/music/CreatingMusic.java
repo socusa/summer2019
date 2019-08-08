@@ -44,15 +44,26 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	public static int factor = 1;
 	public static int tripletFactor = 1;
 	public static Sequencer player;
+	public static MyControllerEventListener myListener;
 	
+	/*
+	 
 	static {
 		try {
 		   player = MidiSystem.getSequencer();
 		   
+		   int[] controllersOfInterest = {1,2,4};
+		   
+		   player.addControllerEventListener(myListener, controllersOfInterest);
+		   
 		} catch (Exception e) {
 		   System.out.println(e);
 		}
+		
+		myListener = new MyControllerEventListener();
 	}
+	
+	*/
 	
 	public CreatingMusic(String title) {
 		super(title);
@@ -143,7 +154,7 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
-		if (player.isOpen())
+		if (player != null && player.isOpen())
 		   JOptionPane.showMessageDialog(null, "You need to exit and restart to play another");
 		else {		
 		   String item = songs.getSelectedItem().toString();
