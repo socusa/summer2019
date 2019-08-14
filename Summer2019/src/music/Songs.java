@@ -2778,21 +2778,21 @@ public class Songs {
 			
 // Measure 1
 			
-			log(1);
+			measure(1);
 			
 			addNotes("E6s D#6s",T);
 			addRest("s",2,B);
 			
 // Measure 2
 			
-			log(2);
+			measure(2);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 			
 // Measure 3
 			
-			log(3);
+			measure(3);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -2803,7 +2803,7 @@ public class Songs {
 			
 // Measure 4
 			
-			log(4);
+			measure(4);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -2815,7 +2815,7 @@ public class Songs {
 
 // Measure 5
 			
-			log(5);
+			measure(5);
 			
 			addNote("C6i",A,T);
 			addRest("s",T);
@@ -2826,14 +2826,14 @@ public class Songs {
 			
 // Measure 6
 			
-			log(6);
+			measure(6);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 			
 // Measure 7
 			
-			log(7);
+			measure(7);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -2844,7 +2844,7 @@ public class Songs {
 		
 // Measure 8
 			
-			log(8);
+			measure(8);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -2855,7 +2855,7 @@ public class Songs {
 		
 // Measure 9
 			
-			log(9);
+			measure(9);
 			
 			addNote("A5q",A,T);
 			addNotes("A3s E4s A4s",B);
@@ -2863,21 +2863,21 @@ public class Songs {
 
 // Measure 10
 			
-			log(10);
+			measure(10);
 						
 			addNotes("E6s D#6s",T);
 			addRest("s",2,B);
 			
 // Measure 11
 			
-			log(11);
+			measure(11);
 						
 		    addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 			
 // Measure 12
 			
-			log(12);
+			measure(12);
 						
 		    addNote("A5i",A,T);
 			addRest("s",T);
@@ -2888,7 +2888,7 @@ public class Songs {
 			
 // Measure 13
 			
-			log(13);
+			measure(13);
 						
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -2899,7 +2899,7 @@ public class Songs {
 
 // Measure 14
 			
-			log(14);
+			measure(14);
 						
 		    addNote("C6i",A,T);
 			addRest("s",T);
@@ -2910,14 +2910,14 @@ public class Songs {
 			
 // Measure 15
 			
-			log(15);
+			measure(15);
 						
 		    addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 			
 // Measure 16
 			
-			log(16);
+			measure(16);
 						
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -2928,7 +2928,7 @@ public class Songs {
 			
 // Measure 17
 			
-			log(17);
+			measure(17);
 						
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -2939,7 +2939,7 @@ public class Songs {
 								
 // Measure 18
 			
-			log(18);
+			measure(18);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -2950,7 +2950,7 @@ public class Songs {
 	        
 // Measure 19
 			
-			log(19);
+			measure(19);
 			
 			addNotes("E6i. G5s F6s E6s",T);
 			addNotes("C4s G4s C5s",B);
@@ -2959,7 +2959,7 @@ public class Songs {
 
 // Measure 20
 			
-			log(20);
+			measure(20);
 			
 			addNotes("D6i. F5s E6s D6s",T);
 			addNotes("G3s G4s B4s",B);
@@ -2968,7 +2968,7 @@ public class Songs {
 			
 // Measure 21
 			
-			log(21);
+			measure(21);
 			
 			addNotes("C6i. E5s D6s C6s",T);
 			addNotes("A3s E4s A4s",B);
@@ -2977,7 +2977,7 @@ public class Songs {
 			
 // Measure 22
 			
-			log(22);
+			measure(22);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -2989,7 +2989,7 @@ public class Songs {
 			
 // Measure 23
 			
-			log(23);
+			measure(23);
 			
 			addRest("s",T);
 			addNotes("E6s E7s",T);
@@ -3002,7 +3002,7 @@ public class Songs {
 			
 // Measure 24
 			
-			log(24);
+			measure(24);
 			
 			addNote("E6i",A,T);
 			addRest("s",T);
@@ -3014,14 +3014,14 @@ public class Songs {
 			
 // Measure 25
 			
-			log(25);
+			measure(25);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 			
 // Measure 26
 			
-			log(26);
+			measure(26);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3032,7 +3032,7 @@ public class Songs {
 			
 // Measure 27
 			
-			log(27);
+			measure(27);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3043,7 +3043,7 @@ public class Songs {
 			
 // Measure 28
 			
-			log(28);
+			measure(28);
 			
 			addNote("C6i",A,T);
 			addRest("s",T);
@@ -3054,14 +3054,14 @@ public class Songs {
 			
 // Measure 29
 			
-			log(29);
+			measure(29);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 			
 // Measure 30
 			
-			log(30);
+			measure(30);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3072,7 +3072,7 @@ public class Songs {
 			
 // Measure 31
 			
-			log(31);
+			measure(31);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3083,7 +3083,7 @@ public class Songs {
 			
 // Measure 32
 			
-			log(32);
+			measure(32);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3094,7 +3094,7 @@ public class Songs {
 			
 // Measure 33
 			
-			log(33);
+			measure(33);
 			
 			addNotes("E6i. G5s F6s E6s",T);
 			addNotes("C4s G4s C5s",B);
@@ -3103,7 +3103,7 @@ public class Songs {
 
 // Measure 34
 			
-			log(34);
+			measure(34);
 						
 			addNotes("D6i. F5s E6s D6s",T);
 			addNotes("G3s G4s B4s",B);
@@ -3112,7 +3112,7 @@ public class Songs {
 						
 // Measure 35
 			
-			log(35);
+			measure(35);
 						
 			addNotes("C6i. E5s D6s C6s",T);
 			addNotes("A3s E4s A4s",B);
@@ -3121,7 +3121,7 @@ public class Songs {
 						
 // Measure 36
 			
-			log(36);
+			measure(36);
 						
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3133,7 +3133,7 @@ public class Songs {
 						
 // Measure 37
 			
-			log(37);
+			measure(37);
 						
 			addRest("s",T);
 			addNotes("E6s E7s",T);
@@ -3146,7 +3146,7 @@ public class Songs {
 						
 // Measure 38
 			
-			log(38);
+			measure(38);
 						
 			addNote("E6i",A,T);
 			addRest("s",T);
@@ -3158,14 +3158,14 @@ public class Songs {
 						
 // Measure 39
 			
-			log(39);
+			measure(39);
 						
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 						
 // Measure 40
 			
-			log(40);
+			measure(40);
 						
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3176,7 +3176,7 @@ public class Songs {
 						
 // Measure 41
 			
-			log(41);
+			measure(41);
 						
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3187,7 +3187,7 @@ public class Songs {
 						
 // Measure 42
 			
-			log(42);
+			measure(42);
 						
 			addNote("C6i",A,T);
 			addRest("s",T);
@@ -3198,14 +3198,14 @@ public class Songs {
 						
 // Measure 43
 			
-			log(43);
+			measure(43);
 						
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 						
 // Measure 44
 			
-			log(44);
+			measure(44);
 						
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3216,7 +3216,7 @@ public class Songs {
 						
 // Measure 45
 			
-			log(45);
+			measure(45);
 						
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3227,7 +3227,7 @@ public class Songs {
 			
 // Measure 46
 			
-			log(46);
+			measure(46);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3236,56 +3236,56 @@ public class Songs {
 			
 // Measure 47
 			
-			log(47);
+			measure(47);
 			
 			addNotes("C6q F6s. E6t",T);
 			addNotes("F4s A4s C5s A4s C5s A4s",B);
 
 // Measure 48
 			
-			log(48);
+			measure(48);
 			
 			addNotes("E6i D6i Bb6s. A6t",T);
 			addNotes("F4s Bb4s D5s Bb4s D5s B4s",B);
 
 // Measure 49
 			
-			log(49);
+			measure(49);
 			
 			addNotes("A6s G6s F6s E6s D6s C6s",T);
 			addNotes("F4s E5s F4s+G4s+Bb4s E5s F4s+G4s+Bb4s E5s",B);
 
 // Measure 50
 			
-			log(50);
+			measure(50);
 			
 			addNotes("Bb5i A5i A5t G5t A5t B5t",T);
 			addNotes("F4s A4s C5s A4s C5s A4s",B);
 
 // Measure 51
 			
-			log(51);
+			measure(51);
 			
 			addNotes("C6q D6s D#6s",T);
 			addNotes("F4s A4s C5s A4s C5s A4s",B);
 
 // Measure 52
 			
-			log(52);
+			measure(52);
 			
 			addNotes("E6i. E6s F6s A5s",T);
 			addNotes("E4s A4s C5s A4s D4s+D5s F4s",B);
 
 // Measure 53
 			
-			log(53);
+			measure(53);
 			
 			addNotes("C6q D6s. B5t",T);
 			addNotes("G4s E5s G4s E5s G4s F4s",B);
 
 // Measure 54
 			
-			log(54);
+			measure(54);
 			
 			addNotes("C6t G6t G5t G6t A5t G6t B5t G6t C6t G6t D6t G6t",T);
 			addNotes("C5i+E5i",B);
@@ -3294,14 +3294,14 @@ public class Songs {
 
 // Measure 55
 			
-			log(55);
+			measure(55);
 			
 			addNotes("E6t G6t C7t B6t A6t G6t F6t E6t D6t G6t F6t D6t",T);
 			addNotes("C5i+E5i+G5i F4i+A4i G4i+B4i",B);
 
 // Measure 56
 			
-			log(56);
+			measure(56);
 			
 			addNotes("C6t G6t G5t G6t A5t G6t B5t G6t C6t G6t D6t G6t",T);
 			addNote("C5i",A,B);
@@ -3310,7 +3310,7 @@ public class Songs {
 
 // Measure 57
 			
-			log(57);
+			measure(57);
 			
 			addNotes("E6t G6t C7t B6t A6t G6t F6t E6t D6t G6t F6t D6t",T);
 			addNotes("C5i+E5i+G5i",B);
@@ -3318,7 +3318,7 @@ public class Songs {
 
 // Measure 58
 			
-			log(58);
+			measure(58);
 			
 			addNotes("E6t F6t E6t D#6t E6t B5t E6t D6t E6t B5t E6t D6t",T);
 			addNotes("G#4i+B4i",B);
@@ -3326,7 +3326,7 @@ public class Songs {
 
 // Measure 59
 			
-			log(59);
+			measure(59);
 			
 			addNotes("E6i. B5s E6s D#6s",T);
 			addRest("i",B);
@@ -3334,7 +3334,7 @@ public class Songs {
 
 // Measure 60
 			
-			log(60);
+			measure(60);
 			
 			addNotes("E6i. B5s E6s D#6s",T);
 			addRest("i",B);
@@ -3342,14 +3342,14 @@ public class Songs {
 
 // Measure 61
 			
-			log(61);
+			measure(61);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 
 // Measure 62
 			
-			log(62);
+			measure(62);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3360,7 +3360,7 @@ public class Songs {
 
 // Measure 63
 			
-			log(63);
+			measure(63);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3371,7 +3371,7 @@ public class Songs {
 
 // Measure 64
 			
-			log(64);
+			measure(64);
 			
 			addNote("C6i",A,T);
 			addRest("s",T);
@@ -3382,14 +3382,14 @@ public class Songs {
 
 // Measure 65
 			
-			log(65);
+			measure(65);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 
 // Measure 66
 			
-			log(66);
+			measure(66);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3400,7 +3400,7 @@ public class Songs {
 
 // Measure 67
 			
-			log(67);
+			measure(67);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3411,7 +3411,7 @@ public class Songs {
 
 // Measure 68
 			
-			log(68);
+			measure(68);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3422,7 +3422,7 @@ public class Songs {
 
 // Measure 69
 			
-			log(69);
+			measure(69);
 			
 			addNotes("E6i. G5s F6s E6s",T);
 			addNotes("E4s G4s C5s",B);
@@ -3431,7 +3431,7 @@ public class Songs {
 
 // Measure 70
 			
-			log(70);
+			measure(70);
 			
 			addNotes("D6i. F5s E6s D6s",T);
 			addNotes("G3s G4s B4s",B);
@@ -3440,7 +3440,7 @@ public class Songs {
 
 // Measure 71
 			
-			log(71);
+			measure(71);
 			
 			addNotes("C6i. E5s D6s C6s",T);
 			addNotes("A3s E4s A4s",B);
@@ -3449,7 +3449,7 @@ public class Songs {
 
 // Measure 72
 			
-			log(72);
+			measure(72);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3461,7 +3461,7 @@ public class Songs {
 
 // Measure 73
 			
-			log(73);
+			measure(73);
 			
 			addRest("s",T);
 			addNotes("E6s E7s",T);
@@ -3474,7 +3474,7 @@ public class Songs {
 
 // Measure 74
 			
-			log(74);
+			measure(74);
 			
 			addNote("E6s",A,T);
 			addRest("s",2,T);
@@ -3486,14 +3486,14 @@ public class Songs {
 
 // Measure 75
 			
-			log(75);
+			measure(75);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 
 // Measure 76
 			
-			log(76);
+			measure(76);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3504,7 +3504,7 @@ public class Songs {
 
 // Measure 77
 			
-			log(77);
+			measure(77);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3515,7 +3515,7 @@ public class Songs {
 
 // Measure 78
 			
-			log(78);
+			measure(78);
 			
 			addNote("C6i",A,T);
 			addRest("s",T);
@@ -3526,14 +3526,14 @@ public class Songs {
 
 // Measure 79
 			
-			log(79);
+			measure(79);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 
 // Measure 80
 			
-			log(80);
+			measure(80);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3544,7 +3544,7 @@ public class Songs {
 
 // Measure 81
 			
-			log(81);
+			measure(81);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3555,7 +3555,7 @@ public class Songs {
 
 // Measure 82
 			
-			log(82);
+			measure(82);
 			
 			addNote("A5i",A,T);
 			addRest("i",2,T);
@@ -3563,112 +3563,112 @@ public class Songs {
 
 // Measure 83
 			
-			log(83);
+			measure(83);
 			
 			addNotes("E5q.+G5q.+Bb5q.+D#6q.",T);
 			addNotes("A3s A3s A3s A3s A3s A3s",B);
 
 // Measure 84
 			
-			log(84);
+			measure(84);
 			
 			addNotes("F5q+A5s+D6q C#6s+E6s D6s+F6s",T);
 			addNotes("A3s A3s A3s A3s A3s A3s",B);
 			
 // Measure 85
 			
-			log(85);
+			measure(85);
 			
 			addNotes("G#5q+D6q+F6q D5i+D6i+F6i",T);
 			addNotes("A3s A3s A3s A3s A3s A3s",B);
 			
 // Measure 86
 			
-			log(86);
+			measure(86);
 			
 			addNotes("A5q.+Cn6q.+E6q.",T);
 			addNotes("A3s A3s A3s A3s A3s A3s",B);
 
 // Measure 87
 			
-			log(87);
+			measure(87);
 			
 			addNotes("F5q+D6q E5s+C6s D5s+B5s",T);
 			addNotes("D3s+A3s D3s+A3s D3s+A3s D3s+A3s D3s+A3s D3s+A3s",B);
 
 // Measure 88
 			
-			log(88);
+			measure(88);
 			
 			addNotes("C5q+F#5q+A5q C5i+A5i",T);
 			addNotes("D#3s+A3s D#3s+A3s D#3s+A3s D#3s+A3s D#3s+A3s D#3s+A3s",B);
 
 // Measure 89
 			
-			log(89);
+			measure(89);
 			
 			addNotes("C5i+A5i E5i+C6i D5i+B5i",T);
 			addNotes("E3s+A3s E3s+A3s E3s+A3s E3s+A3s E3s+G#3s E3s+G#3s",B);
 
 // Measure 90
 			
-			log(90);
+			measure(90);
 			
 			addNotes("C5q.+A5q.",T);
 			addNotes("A2s+A3s A3s A3s A3s A3s A3s",B);
 
 // Measure 91
 			
-			log(91);
+			measure(91);
 			
 			addNotes("E5q.+G5q.+Bb5q.+C#6q.",T);
 			addNotes("A3s A3s A3s A3s A3s A3s",B);
 
 // Measure 92
 			
-			log(92);
+			measure(92);
 			
 			addNotes("F5q+A5q+D6q C#6s+E6s D6s+F6s",T);
 			addNotes("A3s A3s A3s A3s A3s A3s",B);
 
 // Measure 93
 			
-			log(93);
+			measure(93);
 			
 			addNotes("D6q+F6q D6i+F6i",T);
 			addNotes("A3s A3s A3s A3s A3s A3s",B);
 
 // Measure 94
 			
-			log(94);
+			measure(94);
 			
 			addNotes("D6q.+F6q.",T);
 			addNotes("Bb3s Bb3s Bb3s Bb3s Bb3s Bb3s",B);
 
 // Measure 95
 			
-			log(95);
+			measure(95);
 			
 			addNotes("G5q+Eb6q F5s+D6s Eb5s+C6s",T);
 			addNotes("Bb3s Bb3s Bb3s Bb3s Bb3s Bb3s",B);
 
 // Measure 96
 			
-			log(96);
+			measure(96);
 			
 			addNotes("D5q+F5q+B5q D5i+F5i+A5i",T);
 			addNotes("Bb3s Bb3s Bb3s Bb3s Bb3s Bb3s",B);
 
 // Measure 97
 			
-			log(97);
+			measure(97);
 			
 			addNotes("D5q+F#5q+G5q D5i+F5i+G5i",T);
 			addNotes("Bn3s Bn3s Bn3s Bn3s Bn3s Bn3s",B);
 
 // Measure 98
 			
-			log(98);
+			measure(98);
 			
 			addNotes("C5q+En5q+A5q",T);
 			addRest("i",T);
@@ -3677,7 +3677,7 @@ public class Songs {
 
 // Measure 99
 			
-			log(99);
+			measure(99);
 			
 			addNotes("F5i+B5i",T);
 			addRest("i",2,T);
@@ -3686,7 +3686,7 @@ public class Songs {
 
 // Measure 100
 			
-			log(100);
+			measure(100);
 			
 			tripletFactor = 2;
 			
@@ -3702,7 +3702,7 @@ public class Songs {
 
 // Measure 101
 			
-			log(101);
+			measure(101);
 			
 			tripletFactor = 2;
 			
@@ -3718,7 +3718,7 @@ public class Songs {
 			
 // Measure 102
 			
-			log(102);
+			measure(102);
 			
 			tripletFactor = 2;
 			
@@ -3734,7 +3734,7 @@ public class Songs {
 			
 // Measure 103
 			
-			log(103);
+			measure(103);
 			
 			tripletFactor = 2;
 			
@@ -3749,21 +3749,21 @@ public class Songs {
 			
 // Measure 104
 			
-			log(104);
+			measure(104);
 			
 			addNotes("C#7s Cn7s B6s Bb6s A6s G#6s Gn6s F#6s Fn6s",T);
 			addRest("s",9,B);
 			
 // Measure 105
 			
-			log(105);
+			measure(105);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 			
 // Measure 106
 			
-			log(106);
+			measure(106);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3774,7 +3774,7 @@ public class Songs {
 			
 // Measure 107
 			
-			log(107);
+			measure(107);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3785,7 +3785,7 @@ public class Songs {
 			
 // Measure 108
 			
-			log(108);
+			measure(108);
 			
 			addNote("C6i",A,T);
 			addRest("s",T);
@@ -3796,14 +3796,14 @@ public class Songs {
 			
 // Measure 109
 			
-			log(109);
+			measure(109);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 			
 // Measure 110
 			
-		    log(110);	
+		    measure(110);	
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3814,7 +3814,7 @@ public class Songs {
 			
 // Measure 111
 			
-			log(111);
+			measure(111);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3825,7 +3825,7 @@ public class Songs {
 			
 // Measure 112
 			
-			log(112);
+			measure(112);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3836,7 +3836,7 @@ public class Songs {
 			
 // Measure 113
 			
-			log(113);
+			measure(113);
 			
 			addNotes("E6i. G5s F6s E6s",T);
 			addNotes("C4s G4s C5s",B);
@@ -3845,7 +3845,7 @@ public class Songs {
 			
 // Measure 114
 			
-			log(114);
+			measure(114);
 			
 			addNotes("D6i. F5s E6s D6s",T);
 			addNotes("G3s G4s B4s",B);
@@ -3854,7 +3854,7 @@ public class Songs {
 			
 // Measure 115
 			
-			log(115);
+			measure(115);
 			
 			addNotes("C6i. E5s D6s C6s",T);
 			addNotes("A3s E4s A4s",B);
@@ -3863,7 +3863,7 @@ public class Songs {
 			
 // Measure 116
 			
-			log(116);
+			measure(116);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3875,7 +3875,7 @@ public class Songs {
 
 // Measure 117
 			
-			log(117);
+			measure(117);
 			
 			addRest("s",T);
 			addNotes("E6s E7s",T);
@@ -3888,7 +3888,7 @@ public class Songs {
 
 // Measure 118
 			
-			log(118);
+			measure(118);
 			
 			addNote("E6s",A,T);
 			addRest("s",2,T);
@@ -3900,14 +3900,14 @@ public class Songs {
 
 // Measure 119
 			
-			log(119);
+			measure(119);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 
 // Measure 120
 			
-			log(120);
+			measure(120);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3918,7 +3918,7 @@ public class Songs {
 
 // Measure 121
 			
-			log(121);
+			measure(121);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3929,7 +3929,7 @@ public class Songs {
 
 // Measure 122
 			
-			log(122);
+			measure(122);
 			
 			addNote("C6i",A,T);
 			addRest("s",T);
@@ -3940,14 +3940,14 @@ public class Songs {
 
 // Measure 123
 			
-			log(123);
+			measure(123);
 			
 			addNotes("E6s D#6s E6s B5s Dn6s C6s",T);
 			addRest("s",6,B);
 
 // Measure 124
 			
-			log(124);
+			measure(124);
 			
 			addNote("A5i",A,T);
 			addRest("s",T);
@@ -3958,7 +3958,7 @@ public class Songs {
 
 // Measure 125
 			
-			log(125);
+			measure(125);
 			
 			addNote("B5i",A,T);
 			addRest("s",T);
@@ -3969,7 +3969,7 @@ public class Songs {
 
 // Measure 126
 			
-			log(126);
+			measure(126);
 			
 			addNote("A5i",A,T);
 			addRest("i",T);

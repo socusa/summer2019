@@ -6,16 +6,24 @@ import static music.CreatingMusic.track;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.Sequence;
 
+import music.MyMetaEventListener;
+
 public abstract class Song {
 	
 	public abstract void measures();
+	
+	public void measure(int number) {
+		
+	}
 	
 	public void play() {
 		try {			
             player = MidiSystem.getSequencer();
 			
  		    player.open();
- 		   
+
+ 		    player.addMetaEventListener(new MyMetaEventListener());
+
  		    Sequence sequence = new Sequence(Sequence.PPQ,4);
 			
 			track = sequence.createTrack();

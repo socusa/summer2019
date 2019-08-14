@@ -3,6 +3,8 @@ package music;
 import javax.sound.midi.MetaEventListener;
 import javax.sound.midi.MetaMessage;
 
+import static music.CreatingMusic.measureMonitor;
+
 public class MyMetaEventListener implements MetaEventListener {
 
 	@Override
@@ -13,6 +15,8 @@ public class MyMetaEventListener implements MetaEventListener {
 			byte[] bytes = meta.getData();
 			
 			System.out.println("Measure " + bytes[0]);
+			
+			measureMonitor.setMessage("Measure " + bytes[0]);
 		}
 	}
 

@@ -469,7 +469,7 @@ public class Util {
     	        fourthVoiceTime += lengthOfDuration(duration);
 	}
 	
-	public static void log(int measure) {
+	public static void measure(int measure) {
 		try {
 			track.add(new MidiEvent(new MetaMessage(1,new byte[] {(byte)measure},1),trebleTime));
 		} catch (InvalidMidiDataException e) {

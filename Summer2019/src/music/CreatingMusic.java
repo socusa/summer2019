@@ -45,6 +45,7 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	public static int tripletFactor = 1;
 	public static Sequencer player;
 	public static MyControllerEventListener myListener;
+	public static MeasureMonitor measureMonitor;
 	
 	/*
 	 

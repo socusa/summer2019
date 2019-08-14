@@ -11,7 +11,7 @@ public class ChangeFromUnicode {
 
       scanner.close();
 
-      Pattern pattern = Pattern.compile("\\\\u(\\d\\d\\d\\d)");
+      Pattern pattern = Pattern.compile("\\\\u([0-9a-zA-Z]{4})");
 
       for (String line : lines) {
          String temp = "";
@@ -19,19 +19,11 @@ public class ChangeFromUnicode {
          Matcher matcher = pattern.matcher(line);
 
          while (matcher.find()) {
-            System.out.println(matcher.group(0) + " " + Integer.valueOf(matcher.group(1),16) + (char)(Integer.parseInt(matcher.group(1),16)));
-
             temp += (char)(Integer.valueOf(matcher.group(1),16).intValue());
          }
 
          System.out.println(temp);
       }
-
-
-
-
-
-
    }
 
 }
