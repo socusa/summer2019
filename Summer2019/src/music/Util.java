@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import javax.sound.midi.InvalidMidiDataException;
+import javax.sound.midi.MetaMessage;
 import javax.sound.midi.MidiEvent;
 import javax.sound.midi.ShortMessage;
 import javax.swing.JOptionPane; 
@@ -466,6 +467,15 @@ public class Util {
     	        thirdVoiceTime += lengthOfDuration(duration);
             else
     	        fourthVoiceTime += lengthOfDuration(duration);
+	}
+	
+	public static void log(int measure) {
+		try {
+			track.add(new MidiEvent(new MetaMessage(1,new byte[] {(byte)measure},1),trebleTime));
+		} catch (InvalidMidiDataException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 }

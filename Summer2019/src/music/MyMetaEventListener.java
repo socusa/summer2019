@@ -9,8 +9,11 @@ public class MyMetaEventListener implements MetaEventListener {
 	public void meta(MetaMessage meta) {
 		// TODO Auto-generated method stub
 		
-		System.out.println(meta);
-		
+		if (meta.getType() == 1) {
+			byte[] bytes = meta.getData();
+			
+			System.out.println("Measure " + bytes[0]);
+		}
 	}
 
 }
