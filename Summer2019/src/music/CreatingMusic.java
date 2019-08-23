@@ -8,9 +8,13 @@ import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.net.URL;
 import java.util.Arrays;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -46,102 +50,60 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	public static Sequencer player;
 	public static MyControllerEventListener myListener;
 	public static MeasureMonitor measureMonitor;
-	
-	/*
-	 
-	static {
-		try {
-		   player = MidiSystem.getSequencer();
-		   
-		   int[] controllersOfInterest = {1,2,4};
-		   
-		   player.addControllerEventListener(myListener, controllersOfInterest);
-		   
-		} catch (Exception e) {
-		   System.out.println(e);
-		}
-		
-		myListener = new MyControllerEventListener();
-	}
-	
-	*/
+	public static JComboBox temp;
+	public static Map<String,Class> classes;
 	
 	public CreatingMusic(String title) {
 		super(title);
 		
 		setLayout(new FlowLayout());
 		
-		add(songs = new JComboBox<String>());
-		
-		songs.setPreferredSize(new Dimension(250,50));
-		
-		songs.setFont(new Font("Comic Sans MS",Font.BOLD,20));
-		
-	    Method[] methods = Songs.class.getDeclaredMethods();
+	    add(songs = new JComboBox<String>());
 	    
-	    String[] songs1 = new String[methods.length];
-	
-	    for (int counter=0;counter<songs1.length;counter++)
-	    	songs1[counter] = methods[counter].getName().substring(4).replaceAll("_", " ");	    
+	    classes = new HashMap<>();
 	    
-	    Arrays.sort(songs1);
-
-	    for (int counter=0;counter<songs1.length;counter++)
-	    	songs.addItem(songs1[counter]);
-	    	    
+	    songs.setFont(new Font("Comic Sans MS",Font.BOLD,20));
+	    
+	    ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+	    
+	    try {
+			Enumeration<URL> resources = classLoader.getResources("songs");
+			
+			while (resources.hasMoreElements()) {
+				URL resource = resources.nextElement();
+								
+				String[] fileNames = new File(resource.getFile()).list();
+				
+				for (int counter=0;counter<fileNames.length;counter++) {
+	               String[] tokens = fileNames[counter].split("\\.");
+	               
+	               if (tokens.length > 1 
+	            	   && tokens[1].contentEquals("class")
+	            	   && !tokens[0].equals("Song")) {
+	            	   songs.addItem(tokens[0].replaceAll("_"," "));				
+	            	  
+	            	   try {
+						classes.put(tokens[0].replaceAll("_", " "), Class.forName("songs." + tokens[0].replaceAll(" ", "_")));
+		  			   } catch (ClassNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					   }
+	               }
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	   
 	    add(play = new JButton("Play"));
 	    
 	    play.setFont(new Font("Comic Sans MS",Font.BOLD,20));
 	    
 	    play.addActionListener(this);
-	    
-	    getNote("A",5);
 	}
 	
-	/*
-	
-	public static void play() {
-		try {
-			Sequencer player = MidiSystem.getSequencer();
-			
-			player.open();
-			
-			player.setTempoInBPM(140);
-			
-			Sequence sequence = new Sequence(Sequence.PPQ,4);
-			
-			track = sequence.createTrack();
-			
-			for (int counter=0;counter<3;counter++) {
-				addNote("C#7i",A,T);
-				addNote("F#6i",A,T);
-				addNote("F#6i",A,T);
-				addNote("C#7i",A,T);
-				addNote("C#7i",A,T);
-				addNote("F#6i",A,T);
-				addNote("D7i",A,T);
-				addNote("F#6i",A,T);
-				
-				for (int counter1=0;counter1<8;counter1++)
-					addRest("i",B);
-			}
-			
-
-			player.setSequence(sequence);
-			
-			player.start();
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-	}
-	
-	*/
-
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-//		play();
 		
 		CreatingMusic creatingMusic = new CreatingMusic("Creating Music");
 		
@@ -153,26 +115,22 @@ public class CreatingMusic extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
 		if (player != null && player.isOpen())
 		   JOptionPane.showMessageDialog(null, "You need to exit and restart to play another");
 		else {		
-		   String item = songs.getSelectedItem().toString();
+			Method play = null;
 
-		   Method[] methods = Songs.class.getDeclaredMethods();
-		
-		   for (int counter=0;counter<methods.length;counter++) {
-		      if ((methods[counter].getName().substring(4).replaceAll("_", " ")).equalsIgnoreCase(item))
-			     try {
-					methods[counter].invoke(null,this);
-				 } catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				 }
-		   }
+			try {
+				play = classes.get(songs.getSelectedItem()).getMethod("play");
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			} 
+
+			try {
+			   play.invoke(classes.get(songs.getSelectedItem()).newInstance());
+			} catch (Exception e2) {
+			   e2.printStackTrace();
+			}
 		}
-		
-		
 	}
 }
