@@ -8,6 +8,8 @@ import javax.swing.JFrame;
 
 public class MeasureMonitor extends JFrame {
 	public String message;
+	public int trebleTime;
+	public int bassTime;
 	
 	public MeasureMonitor(String title) {
 		message = "";
@@ -24,6 +26,18 @@ public class MeasureMonitor extends JFrame {
 		repaint();
 	}
 	
+	public void setTrebleTime(int trebleTime) {
+        this.trebleTime = trebleTime;
+        
+        repaint();
+	}
+	
+	public void setBassTime(int bassTime) {
+		this.bassTime = bassTime;
+		
+		repaint();
+	}
+	
 	public void paint(Graphics g) {
 		super.paint(g);
 		
@@ -35,7 +49,14 @@ public class MeasureMonitor extends JFrame {
 		
 		int height = metrics.getHeight();
 		
-		g.drawString(message, 350 - width/2, 50 + height/4);		
+		g.drawString(message, 350 - width/2, 55);		
+
+		String message1 = "Treble Time: " + trebleTime + " Bass Time: " + bassTime;
+		
+        width = metrics.stringWidth(message1);
+        
+        g.drawString(message1, 350 - width/2, 80);
+		
 	}
 
 }

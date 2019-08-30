@@ -470,6 +470,22 @@ public class Util {
 	}
 	
 	public static void measure(int measure) {
+		String line = measure + ";" + trebleTime + ";" + bassTime;
+		
+		try {
+			track.add(new MidiEvent(new MetaMessage(1,line.getBytes(),line.getBytes().length),trebleTime));
+		} catch (InvalidMidiDataException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	/*
+	
+	public static void measure(int measure,
+			                   int trebleTime) {
+		System.out.println(trebleTime);
+		
 		try {
 			track.add(new MidiEvent(new MetaMessage(1,new byte[] {(byte)measure},1),trebleTime));
 		} catch (InvalidMidiDataException e) {
@@ -477,5 +493,7 @@ public class Util {
 			e.printStackTrace();
 		}
 	}
+	
+	*/
 	
 }

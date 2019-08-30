@@ -67,7 +67,7 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	    ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 	    
 	    try {
-			Enumeration<URL> resources = classLoader.getResources("songs");
+			Enumeration<URL> resources = classLoader.getResources("samples");
 			
 			while (resources.hasMoreElements()) {
 				URL resource = resources.nextElement();
@@ -83,7 +83,7 @@ public class CreatingMusic extends JFrame implements ActionListener {
 	            	   songs.addItem(tokens[0].replaceAll("_"," "));				
 	            	  
 	            	   try {
-						classes.put(tokens[0].replaceAll("_", " "), Class.forName("songs." + tokens[0].replaceAll(" ", "_")));
+						classes.put(tokens[0].replaceAll("_", " "), Class.forName("samples." + tokens[0].replaceAll(" ", "_")));
 		  			   } catch (ClassNotFoundException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
