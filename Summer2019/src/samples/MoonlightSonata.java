@@ -25,7 +25,7 @@ public class MoonlightSonata extends Song {
 		
 		tripletFactor = 1;
 		
-		addNotes("C2w+C4w",B);
+		addNotes("C3w+C4w",B);
 		
 		measure(2);
 		
@@ -80,18 +80,18 @@ public class MoonlightSonata extends Song {
 		tripletFactor = 1;
 		
 		addNotes("G5h. G5i. G5s",T,T);
-		addNotes("B#2w+G3w+B#3w",B);
+		addNotes("B#2w+G3w+B#4w",B);
 		
 		measure(7);
 		
 		tripletFactor = 2;
 		
-		addNotes("B4i C5i E5i B4i C5i E5i A4i C5i F5i A4i C5i F5i",T);
+		addNotes("G4i C5i E5i G4i C5i E5i A4i C5i F5i A4i C5i F5i",T);
 		
 		tripletFactor = 1;
 		
 		addNotes("G5h A5h",T,T);
-		addNotes("C2h+C4h F2h+F3h",B);
+		addNotes("C3h+C4h F2h+F3h",B);
 		
 		measure(8);
 		
