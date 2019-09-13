@@ -16,18 +16,18 @@ public class A_Breeze_From_Alabama extends Song {
 		measure(1);
 		
 		addNotes("C5i+G5i",T);
-		addNote("C5i",A,T);
+		addNote("C5i",A,B);
 		
 		measure(2);
 		
 		addNotes("D5i+C6i A5s G#5s A5s B5s",T);
-		addNotes("F#4i+A4i+C5i A4s #4s A4s B4s",B);
+		addNotes("F#4i+A4i+C5i A4s G#4s A4s B4s",B);
 		
 		measure(3);
 		
 		tie(D,T,"E5i","E5s");
 		tie(A,T,"C6i","C6s");
-		addNotes("G5s E5sD#5s E5s F5s",T);
+		addNotes("G5s E5s D#5s E5s F5s",T);
 		tie(D,B,"Gn4i","Gn4s");
 		tie(A,B,"C5i","C5s");
 		addNotes("G4s E4s D#4s E4s F4s",B);
@@ -36,6 +36,7 @@ public class A_Breeze_From_Alabama extends Song {
 		
 		tie(A,T,"G5i","G5s");
 		addNotes("F5s D5s C#5s E5s D5s B4s A4s",T);
+		tie(A,B,"G4i","G4s");
 		addNotes("F4s D4s C#4s E4s D4s B3s A3s",B);
 		
 		measure(5);
@@ -51,7 +52,7 @@ public class A_Breeze_From_Alabama extends Song {
 	    measure(6);
 	    
 	    addNotes("G5s+E6s F#5s+D#6s G5s+E6s",T);
-	    tie(A,T,"E5s","E5s");
+	    tie(D,T,"E5s","E5s");
 	    tie(A,T,"C6s","C6s");
 	    addNotes("E5s F5s F#5s",T);
 	    addNotes("C4q G4q+C5q+E5q G3q G4q+C5q+E5q",B);

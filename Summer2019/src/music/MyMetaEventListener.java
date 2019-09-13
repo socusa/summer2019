@@ -27,12 +27,9 @@ public class MyMetaEventListener implements MetaEventListener {
 			int trebleTime = Integer.parseInt(tokens[1]);
 			int bassTime = Integer.parseInt(tokens[2]);
 						
-			System.out.println("Measure " + measure);
-			
-			measureMonitor.setMessage("Measure " + measure);
-			
-			measureMonitor.setTrebleTime(trebleTime);
-			measureMonitor.setBassTime(bassTime);
+			measureMonitor.setMessage(measure,
+			                          trebleTime,
+			                          bassTime);
 		}
 	}
 
